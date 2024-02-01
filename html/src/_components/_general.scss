@@ -1,0 +1,38 @@
+.img-drop {
+    display: block;
+    position: relative;
+    overflow: hidden;
+
+    img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-position: 50% 50%;
+        object-fit: cover;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+
+[data-nav-inline] {
+    --gutter-x: 15px;
+
+    @include media-breakpoint-down(md) {
+        margin-left: calc(var(--gutter-x) * -1);
+        margin-right: calc(var(--gutter-x) * -1);
+        overflow-x: auto;
+        @include hide-scrollbar;
+    }
+
+    > * {
+        @include reset-list;
+        display: inline-flex;
+        flex-wrap: wrap;
+
+        @include media-breakpoint-down(md) {
+            flex-wrap: nowrap;
+            margin: 0 var(--gutter-x);
+        }
+    }
+}

@@ -1,0 +1,93 @@
+@function em($pixels, $context: $browser-context) {
+    @return #{$pixels/$context}em;
+}
+
+@mixin img-drop($width, $height) {
+    padding-bottom: ($height/$width) * 100%;
+}
+
+@mixin truncate($font-size: null, $line-height: null, $lines-to-show: 1) {
+    @if ($font-size and $line-height and $lines-to-show > 1) {
+        display: -webkit-box;
+        max-height: $font-size * $line-height * $lines-to-show;
+        -webkit-line-clamp: $lines-to-show;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    } @else {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+@mixin reset-list {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+@mixin reset-autofill($color: inherit) {
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus,
+    &:-webkit-autofill:active {
+        -webkit-text-fill-color: $color;
+        transition: background-color 5000s ease-in-out 0s;
+    }
+}
+
+@mixin icon {
+    svg[role="img"] {
+        @content;
+    }
+}
+
+@mixin hide-scrollbar {
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+@mixin clear-mb {
+    > *:last-child {
+        margin-bottom: 0 !important;
+    }
+}
+
+@mixin ginput {
+    input[type="color"],
+    input[type="date"],
+    input[type="datetime-local"],
+    input[type="datetime"],
+    input[type="email"],
+    input[type="month"],
+    input[type="number"],
+    input[type="password"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="text"],
+    input[type="time"],
+    input[type="url"],
+    input[type="week"],
+    select,
+    textarea {
+        @content;
+    }
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+@mixin headings($from: 2, $to: 4) {
+    @for $i from $from through $to {
+        h#{$i} {
+            @content;
+        }
+    }
+}

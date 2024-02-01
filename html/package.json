@@ -1,0 +1,43 @@
+{
+    "name": "fe-package",
+    "version": "5.0.0",
+    "description": "fe package",
+    "main": "gulpfile.js",
+    "scripts": {
+        "build": "gulp",
+        "start": "gulp start",
+        "images": "gulp images",
+        "bundle": "gulp bundle",
+        "email": "gulp email",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "isaac.ngo",
+    "license": "ISC",
+    "browserslist": [
+        "last 5 version",
+        "ie >= 7"
+    ],
+    "dependencies": {
+        "@babel/core": "^7.9.0",
+        "@babel/preset-env": "^7.9.6",
+        "bootstrap": "^5.3.2",
+        "browser-sync": "^2.26.13",
+        "gulp": "^4.0.2",
+        "gulp-autoprefixer": "^7.0.1",
+        "gulp-babel": "^8.0.0",
+        "gulp-cheerio": "^1.0.0",
+        "gulp-clean-css": "^4.3.0",
+        "gulp-concat": "^2.6.1",
+        "gulp-dependents": "^1.2.5",
+        "gulp-filter": "^6.0.0",
+        "gulp-imagemin": "^7.1.0",
+        "gulp-inject": "^5.0.5",
+        "gulp-newer": "^1.4.0",
+        "gulp-pug": "^5.0.0",
+        "gulp-rename": "^2.0.0",
+        "gulp-sass": "^4.1.1",
+        "gulp-sourcemaps": "^3.0.0",
+        "gulp-svgstore": "^7.0.1",
+        "gulp-uglify-es": "^2.0.0"
+    }
+}

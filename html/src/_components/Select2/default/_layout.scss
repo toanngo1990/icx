@@ -1,0 +1,15 @@
+.select2-container--default {
+    @import "single";
+
+    .select2-results__option {
+        padding: 6px 1rem;
+    }
+
+    .select2-results__option--selected {
+        background-color: transparent;
+    }
+
+    .select2-results__option--highlighted.select2-results__option--selectable {
+        background-color: var(--primary);
+    }
+}

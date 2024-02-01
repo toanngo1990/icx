@@ -1,0 +1,85 @@
+// Functions first
+@import "bootstrap/scss/functions";
+
+$variable-prefix: "";
+// $rfs-base-value: 1rem;
+// $min-contrast-ratio: 3;
+
+// Variable overrides second
+
+// $font-family-sans-serif: "Gotham", sans-serif;
+// $font-size-base: (14/16) * 1rem;
+// $line-height-base: 1.4;
+
+$gray-100: #f2f2ec;
+$gray-900: #231f20;
+// $primary: #7f8356;
+// $secondary: #979454;
+
+$focus-ring-box-shadow: none;
+
+$link-decoration: none;
+$link-shade-percentage: 30%;
+// $link-color: $gray-900;
+
+// $h1-font-size: 48px;
+$headings-font-weight: 700;
+
+$navbar-toggler-padding-y: 0;
+$navbar-toggler-padding-x: 0;
+$navbar-toggler-border-radius: 0;
+$navbar-toggler-focus-width: 0;
+
+$offcanvas-border-width: 0;
+$hr-opacity: 0.2;
+
+// $modal-inner-padding: 20px;
+// $modal-lg: 938px;
+
+$accordion-border-radius: 0;
+$accordion-border-width: 0;
+$accordion-padding-x: 0;
+$accordion-button-active-bg: none;
+$accordion-button-active-color: inherit;
+
+$btn-border-radius: 0;
+$btn-padding-x: 18px;
+$btn-padding-y: 10px;
+$btn-font-size: 1rem;
+$btn-line-height: 1.5;
+$btn-font-weight: 500;
+
+// Required Bootstrap imports
+@import "bootstrap/scss/variables";
+@import "bootstrap/scss/variables-dark";
+
+// Map overrides here
+$custom-colors: (
+    "border": $gray-100
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+@import "bootstrap/scss/maps";
+@import "bootstrap/scss/mixins";
+@import "bootstrap/scss/utilities";
+
+// Optional components
+@import "bootstrap/scss/root";
+@import "bootstrap/scss/reboot";
+@import "bootstrap/scss/type";
+// @import "bootstrap/scss/containers";
+// @import "bootstrap/scss/grid";
+@import "bootstrap/scss/buttons";
+@import "bootstrap/scss/transitions";
+@import "bootstrap/scss/dropdown";
+// @import "bootstrap/scss/nav";
+// @import "bootstrap/scss/navbar";
+// @import "bootstrap/scss/accordion";
+// @import "bootstrap/scss/close";
+@import "bootstrap/scss/modal";
+@import "bootstrap/scss/tooltip";
+@import "bootstrap/scss/offcanvas";
+@import "bootstrap/scss/placeholders";
+@import "bootstrap/scss/helpers";
+@import "bootstrap/scss/utilities/api";

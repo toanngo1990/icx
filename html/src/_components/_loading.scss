@@ -1,0 +1,37 @@
+$icon-loading-size: 1.5em;
+
+.v-loading,
+.v-loading-light {
+    position: relative;
+    color: transparent;
+    pointer-events: none;
+
+    &:hover {
+        color: transparent;
+    }
+
+    &::after {
+        content: "";
+        display: inline-block;
+        width: $icon-loading-size;
+        height: $icon-loading-size;
+        background-image: url("../images/loading.svg");
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-size: $icon-loading-size auto;
+        vertical-align: middle;
+        position: absolute;
+        top: calc(50% - #{$icon-loading-size / 2});
+        left: calc(50% - #{$icon-loading-size / 2});
+    }
+}
+
+.v-loading-light {
+    &::after {
+        filter: brightness(0) invert(1);
+    }
+}
+
+.gform_ajax_spinner {
+    max-width: $icon-loading-size;
+}

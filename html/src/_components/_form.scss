@@ -1,0 +1,126 @@
+%form-wrapper {
+    --form-gutter-x: 1rem;
+    --form-gutter-y: 1rem;
+    @include reset-list;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: var(--form-gutter-y) var(--form-gutter-x);
+}
+
+%form-group {
+    grid-column: span 12;
+    position: relative;
+}
+
+%form-label {
+    margin-bottom: 5px;
+}
+
+%form-control {
+    display: block;
+    width: 100%;
+    padding: 4px 10px;
+    background-color: transparent;
+    border-radius: 0;
+    border: thin solid var(--border-color);
+    color: var(--body-color);
+    appearance: none;
+    outline: none;
+    @include reset-autofill;
+
+    &:disabled {
+        border-color: var(--border-color);
+    }
+}
+
+%form-check {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 1.5em;
+
+    input {
+        width: 1em;
+        height: 1em;
+        margin-top: 0.2em;
+        margin-right: 0.5em;
+        vertical-align: top;
+        background-color: #fff;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        border: 1px solid rgba(0, 0, 0, 0.25);
+        appearance: none;
+        print-color-adjust: exact;
+
+        &[type="checkbox"] {
+            border-radius: 0.25em;
+
+            &:checked {
+                background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3e%3cpath fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='m6 10 3 3 6-6'/%3e%3c/svg%3e");
+            }
+        }
+
+        &[type="radio"] {
+            border-radius: 50%;
+
+            &:checked {
+                background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='2' fill='%23000'/%3e%3c/svg%3e");
+            }
+        }
+    }
+
+    label {
+        flex: 1;
+        margin-bottom: 0;
+        user-select: none;
+
+        & ~ * {
+            width: 100%;
+        }
+    }
+}
+
+%form-invalid {
+    display: block;
+    font-size: 12px;
+    color: var(--danger);
+    margin-top: 5px;
+}
+
+.v-form-wrapper {
+    @extend %form-wrapper;
+}
+
+.v-form-label {
+    @extend %form-label;
+}
+
+.v-form-group {
+    @extend %form-group;
+}
+
+.v-form-control {
+    @extend %form-control;
+
+    .v-form-group.is-error & {
+        border-color: var(--danger) !important;
+    }
+}
+
+.v-form-check {
+    @extend %form-check;
+
+    &--narrow {
+        > div {
+            margin-top: 20px;
+        }
+
+        input:checked ~ div {
+            display: none;
+        }
+    }
+}
+
+.v-form-invalid {
+    @extend %form-invalid;
+}

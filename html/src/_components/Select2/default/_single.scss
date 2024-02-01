@@ -1,0 +1,29 @@
+.select2-selection--single {
+    height: auto;
+    border-radius: 0;
+    border-color: var(--border-color);
+
+    .select2-selection__rendered {
+        line-height: inherit;
+        padding: 12px 1rem;
+
+        @include media-breakpoint-up(lg) {
+            font-size: 14px;
+        }
+    }
+
+    .select2-selection__clear {
+    }
+
+    .select2-selection__placeholder {
+    }
+
+    .select2-selection__arrow {
+        top: 50%;
+        right: 0.5rem;
+        transform: translate(0, -50%);
+
+        b {
+        }
+    }
+}

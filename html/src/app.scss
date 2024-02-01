@@ -1,0 +1,18 @@
+@import "bootstrap";
+
+@import "styles/variables";
+@import "styles/mixins";
+@import "styles/fonts";
+@import "styles/global";
+@import "styles/type";
+
+@import "_components/general";
+@import "_components/buttons";
+@import "_components/form";
+@import "_components/icons";
+@import "_components/loading";
+@import "_components/Select2/core";
+@import "_components/Header/header";
+@import "_components/Footer/footer";
+
+@import "pages/Index/index";

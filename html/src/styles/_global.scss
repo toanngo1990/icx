@@ -1,0 +1,44 @@
+:root {
+    --wh: 100vh;
+    --safe-area-bottom: calc(100vh - var(--wh));
+    --outside: calc(50% - 50vw);
+}
+
+html,
+body {
+    overscroll-behavior-y: none;
+}
+
+html {
+    &.is-lock {
+        touch-action: none;
+        overflow: hidden;
+    }
+}
+
+body {
+    -webkit-font-smoothing: antialiased;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    color: inherit;
+}
+
+textarea {
+    resize: none;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+.main {
+    flex: 1 1 auto;
+}
