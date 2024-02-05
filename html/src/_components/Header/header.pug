@@ -1,1 +1,34 @@
-p Header
+.header
+    .container-fluid
+        a.logo(href="./")
+            img(src="images/logo.svg" alt="")
+        .tools
+            .tools__item
+                a(href="#")
+                    +icon("search")
+            .tools__item
+                a(href="#")
+                    +icon("notify")
+            .tools__item
+                .dropdown
+                    button.dropdown-toggle(type="button" data-bs-toggle="dropdown" aria-expanded="false")
+                        span
+                            img(src="images/avatar.jpg" alt="")
+                        span Johnson
+                    ul.dropdown-menu
+                        li
+                            a.dropdown-item(href="#") Action
+                        li
+                            a.dropdown-item(href="#") Another action
+                        li
+                            a.dropdown-item(href="#") Something else here
+.navbar
+    .container-fluid
+        -
+            nav = ["Customer Portal", "Home", "Knowledge", "Download Corner", "My Cases", "Create New Case", "Contact Us"]
+        ul.navbar-nav
+            each val in nav
+                li
+                    a(href="#")= val
+
+

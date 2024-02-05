@@ -1,0 +1,37 @@
+extends ../../_layouts/default
+
+block container
+    .row.mb-20
+        .col-lg-6
+            .card.card-info
+                .card-info__title Your Service Order Overview - AAF International (Thailand) Co.,Ltd. (Wichak chongudomlert)
+                .card-info__content
+                    p For sales assistance, you may contact:
+                    p Saran Banjongjit
+                    p 662 863 6038 Ext. 304
+                    p
+                        a(href="#") saranb@signify.co.th
+    .heading Your Recent Orders
+    table.table
+        thead
+            tr
+                th Service Order NO.
+                th Service Profile
+                th Service Type
+                th Status
+                th No. of User
+                th Start Date
+                th End Date
+        tbody
+            each val in [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+                tr
+                    td S0-23-05-000833
+                    td
+                        | Signify CRM Lite Version
+                        br
+                        | Subscription Key
+                    td Subscription
+                    td Progress
+                    td 15
+                    td 2023-05-24
+                    td 2024-06-03

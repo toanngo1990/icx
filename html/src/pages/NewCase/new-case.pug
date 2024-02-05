@@ -1,0 +1,29 @@
+extends ../../_layouts/default
+
+block container
+    .row.mb-20
+        .col-lg-10
+            .heading Submit a new case
+            .form-wrap
+                .row.gy-8
+                    .col-lg-6
+                        +input("Subject", true)
+                    .col-lg-6
+                        label.form-label Type #[span *]
+                        select.form-select
+                            each val in ["Question", "Other option"]
+                                option= val
+                    .col-12
+                        +textarea("Description", true)(rows="3")
+            .heading Note and Attachment (optional)
+            .form-wrap
+                +textarea("Short description:", true)(rows="3")
+                .row.align-items-center
+                    .col-auto
+                        label.form-label Attachment:
+                    .col-auto
+                        input.form-control(type="file")
+                    .col-12
+                        .form-text (Supported File Formats: gif, png, jpg, jpeg, txt, pdf, doc, docx, csv, xml, xls, xlsx)
+                button.btn.btn-primary(type="button") Submit
+

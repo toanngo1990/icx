@@ -1,0 +1,43 @@
+extends ../../_layouts/default
+
+block container
+    .heading Search existing case - Signify Customer Portal (ChatGPT Test)
+    .form-wrap
+        .row.gy-8
+            .col-lg-6
+                +input("Ticket ID:")
+            .col-lg-6
+                +input("Subject:")
+            .col-12
+                label.form-label Status:
+                select.form-select(multiple)
+                    each val in ["News", "Assigned", "Resolved", "Onsite", "Closed", "Closed"]
+                        option= val
+        .hstack.gap-6
+            button.btn.btn-primary(type="button") Search
+            button.btn.btn-outline-primary(type="button") Clear
+    table.table
+        thead
+            tr
+                th Ticket ID
+                th Subject
+                th Type
+                th Category
+                th Priority
+                th Status
+                th Created By
+                th Created Date
+        tbody
+            each val in [1, 2, 3, 4, 5, 6, 7, 8]
+                tr
+                    td T6614153001
+                    td KM: update screenshot of step 5 and 6 in Mail Server manual.
+                    td Question
+                    td CRM
+                    td Low
+                    td Closed
+                    td Nadda
+                    td
+                        | 2023-09-12
+                        br
+                        | 09:22:31

@@ -19,8 +19,12 @@ html(lang="en")
             // CLOSE HEADER
 
             // START CONTENT
-            main.main
-                block container
+            .main
+                .container-fluid
+                    .main__body
+                        block container
+                    .main__header
+                        include ../_components/Nav/nav
             // CLOSE CONTENT
 
             // START FOOTER

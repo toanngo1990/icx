@@ -5,25 +5,24 @@ $variable-prefix: "";
 // $rfs-base-value: 1rem;
 // $min-contrast-ratio: 3;
 
-// Variable overrides second
+$font-family-sans-serif: "Gordita", sans-serif;
+$font-size-base: (14/16) * 1rem;
+$line-height-base: (20/14);
 
-// $font-family-sans-serif: "Gotham", sans-serif;
-// $font-size-base: (14/16) * 1rem;
-// $line-height-base: 1.4;
-
-$gray-100: #f2f2ec;
-$gray-900: #231f20;
-// $primary: #7f8356;
+$gray-200: #eef1f6;
+$gray-600: #5c5f62;
+$blue: #365ac6;
+$primary: $blue;
 // $secondary: #979454;
 
 $focus-ring-box-shadow: none;
 
 $link-decoration: none;
 $link-shade-percentage: 30%;
-// $link-color: $gray-900;
+$link-color: $blue;
 
 // $h1-font-size: 48px;
-$headings-font-weight: 700;
+// $headings-font-weight: 700;
 
 $navbar-toggler-padding-y: 0;
 $navbar-toggler-padding-x: 0;
@@ -49,6 +48,9 @@ $btn-font-size: 1rem;
 $btn-line-height: 1.5;
 $btn-font-weight: 500;
 
+$grid-gutter-width: 20px;
+$spacer: 2px;
+
 // Required Bootstrap imports
 @import "bootstrap/scss/variables";
 @import "bootstrap/scss/variables-dark";
@@ -56,6 +58,41 @@ $btn-font-weight: 500;
 // Map overrides here
 $custom-colors: (
     "border": $gray-100
+);
+
+$spacers: (
+    0: 0,
+    1: $spacer * 1,
+    2: $spacer * 2,
+    3: $spacer * 3,
+    4: $spacer * 4,
+    5: $spacer * 5,
+    6: $spacer * 6,
+    7: $spacer * 7,
+    8: $spacer * 8,
+    9: $spacer * 9,
+    10: $spacer * 10,
+    11: $spacer * 11,
+    12: $spacer * 12,
+    13: $spacer * 13,
+    14: $spacer * 14,
+    15: $spacer * 15,
+    16: $spacer * 16,
+    17: $spacer * 17,
+    18: $spacer * 18,
+    19: $spacer * 19,
+    20: $spacer * 20,
+    30: $spacer * 30,
+    31: $spacer * 31,
+    32: $spacer * 32,
+    33: $spacer * 33,
+    34: $spacer * 34,
+    35: $spacer * 35,
+    36: $spacer * 36,
+    37: $spacer * 37,
+    38: $spacer * 38,
+    39: $spacer * 39,
+    40: $spacer * 20
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);
@@ -68,8 +105,9 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 @import "bootstrap/scss/root";
 @import "bootstrap/scss/reboot";
 @import "bootstrap/scss/type";
-// @import "bootstrap/scss/containers";
-// @import "bootstrap/scss/grid";
+@import "bootstrap/scss/containers";
+@import "bootstrap/scss/grid";
+@import "bootstrap/scss/forms";
 @import "bootstrap/scss/buttons";
 @import "bootstrap/scss/transitions";
 @import "bootstrap/scss/dropdown";
@@ -77,9 +115,10 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 // @import "bootstrap/scss/navbar";
 // @import "bootstrap/scss/accordion";
 // @import "bootstrap/scss/close";
-@import "bootstrap/scss/modal";
-@import "bootstrap/scss/tooltip";
-@import "bootstrap/scss/offcanvas";
+@import "bootstrap/scss/badge";
+// @import "bootstrap/scss/modal";
+// @import "bootstrap/scss/tooltip";
+// @import "bootstrap/scss/offcanvas";
 @import "bootstrap/scss/placeholders";
 @import "bootstrap/scss/helpers";
 @import "bootstrap/scss/utilities/api";

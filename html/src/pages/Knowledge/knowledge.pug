@@ -1,0 +1,49 @@
+extends ../../_layouts/default
+
+block container
+    figure.mb-20
+        img(src="images/knowledge.svg" alt="")
+    .search.mb-25
+        .search-title How can we help
+        +search-input
+    ul.tabs.mb-30
+        li
+            a.is-active(href="#") Overview
+        li
+            a(href="#") Download Corner
+    .cards
+        .card
+            .card__header
+                .card__image
+                    img(src="images/thumb-1.png" alt="")
+                .card__title Recommended use
+            .card__body
+                ul.card-list
+                    -
+                        list = [
+                            "Basic use (5)",
+                            "Video of using the service module/receiving matters (1)",
+                            "Clearing data when CRM version is updated (1)",
+                            "Using the Customer Portal (1)"
+                        ]
+                    each val in list
+                        li
+                            a(href="#")= val
+        .card
+            .card__header
+                .card__image
+                    img(src="images/thumb-1.png" alt="")
+                .card__title Recommended use
+            .card__body
+                ul.card-list
+                    -
+                        list = [
+                            "Importing data into and out of the system (4)",
+                            "Massive data updates (1)",
+                            "Create product information (1)"
+                        ]
+                    each val in list
+                        li
+                            a(href="#")= val
+
+

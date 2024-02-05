@@ -2,71 +2,25 @@ mixin icon(name)
     svg(role="img")&attributes(attributes)
         use(xlink:href="#icon-"+name)
 
-mixin btn(title, arrow, href)
-    - var tag = 'button'
-    if href
-        - tag = 'a'
-    #{tag}.btn.btn-primary(href=(href && href))&attributes(attributes)
-        if arrow
-            +icon("arrow-right")
-            span= title
-        else
-            = title
-
-mixin input(label, isRequired)
+mixin input(label, required)
     - var handle= label ? `${formName}-${label.toLowerCase().replace(/ /g,'-')}` : undefined
 
-    if label
-        label.v-form-label(for=handle)
-            = label
-            if isRequired
-                span *
-    input.v-form-control(id=handle type="text" placeholder=label required=(isRequired && ""))&attributes(attributes)
+    label.form-label(for=handle)
+        = label
+        if required
+            span *
+    input.form-control(id=handle type="text")&attributes(attributes)
 
-mixin select(label)
-    if label
-        label.v-form-label= label
-    select.v-form-select&attributes(attributes)
-        block
-
-mixin options(...items)
-    each item in items
-        option(value=item)= item
-
-mixin textarea(label, isRequired)
+mixin textarea(label, required)
     - var handle= label ? `${formName}-${label.toLowerCase().replace(/ /g,'-')}` : undefined
 
-    if label
-        label.v-form-label(for=handle)
-            = label
-            if isRequired
-                span *
-    textarea.v-form-control(id=handle placeholder=label rows="4" required=(isRequired && ""))&attributes(attributes)
-        block
+    label.form-label(for=handle)
+        = label
+        if required
+            span *
+    textarea.form-control(id=handle)&attributes(attributes)
 
-mixin checkbox(label)
-    - var handle= label ? `${formName}-${label.toLowerCase().replace(/ /g,'-')}` : undefined
-
-    span.v-form-check
-        input(type="checkbox" id=handle)&attributes(attributes)
-        if label
-            label(for=handle)= label
-
-mixin radio(label)
-    - var handle= label ? `${formName}-${label.toLowerCase().replace(/ /g,'-')}` : undefined
-
-    span.v-form-check
-        input(type="radio" id=(handle && handle) name= name)&attributes(attributes)
-        if label
-            label(for=handle)= label
-
-mixin breadcrumb(...items)
-    .v-breadcrumb
-        a(href="#") Home
-        each val, key in items
-            if(key < items.length - 1)
-                span.separator ›
-                a(href="#")= val
-            else
-                span.separator ›
-                span.last= val
+mixin search-input
+    .seach-input
+        input(type="text" placeholder="Search the documentation...")
+        +icon("search")

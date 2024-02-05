@@ -1,0 +1,61 @@
+extends ../../_layouts/default
+
+block container
+    .row.mb-20
+        .col-lg-6
+            .card.card-info
+                .card-info__title Your Support Overview - Signify Customer Portal (chat GPT Test)
+                .card-info__content
+                    p For support assistance, you may contact:
+                    p Support Team
+                    p 66 82 863-6038
+                    p
+                        a(href="#") Support@signify.co.th
+                    hr
+                    p For sales assistance, you may contact:
+                    p Saran Banjongjit
+                    p +662-863-6038 ext. 304
+                    p
+                        a(href="#") saranb@signify.co.th
+    .hstack.align-items-center.mb-20
+        .heading Place New Order
+        button.btn-add(type="button") +
+    .hstack.align-items-center.justify-content-between
+        .heading Your Recent Orders
+        .pagination
+            button
+                +icon("prev")
+                +icon("prev")
+            button
+                +icon("prev")
+            span 1-3 of 5
+            button
+                +icon("next")
+            button
+                +icon("next")
+                +icon("next")
+    table.table
+        thead
+            tr
+                th Order N0.
+                th Order Date
+                th Account
+                th Type
+                th Status
+                th Sub Total
+                th Tax Amount
+                th Total Amount
+                th
+        tbody
+            tr
+                td S017-003
+                td 2023-05-24
+                td Muller Mechanics
+                td Sales
+                td
+                    span.badge.text-bg-warning New
+                td 100.00
+                td 7.00
+                td 107.00
+                td
+                    span.badge.text-bg-primary Re-Order
