@@ -1,0 +1,79 @@
+extends ../../_layouts/default
+
+block container
+    .heading Choose Products
+    .cards
+        -
+            newOrder = [
+                ["SignifyCRM Lite", "THB800 per User per Month, Annual Payment"],
+                ["SignifyCRM Standard", "THB2,000 per User per Month, Annual Payment."],
+                ["Quick Start Implementation Services", "THB50,000, One Time Payment"],
+                ["Training Services", "THB10,000 for Each Class"]
+            ]
+        each val in newOrder
+            .card
+                .card__title= val[0]
+                .card__description= val[1]
+    .row
+        .col-lg-6
+            .form-grid
+                +input("Enter Product Item")
+                label.form-label Choose from Category
+                select.form-select
+                    option Option
+                    option Option
+                    option Option
+        .col-lg-6
+            .form-grid
+                +input("Enter Product Name")
+    .hstack.gap-6
+        button.btn.btn-primary(type="button") Search
+        button.btn.btn-outline-primary(type="button") Clear
+    .hstack.align-items-center.justify-content-between
+        .heading
+        .pagination
+            button
+                +icon("prev")
+                +icon("prev")
+            button
+                +icon("prev")
+            span 1-3 of 5
+            button
+                +icon("next")
+            button
+                +icon("next")
+                +icon("next")
+    table.table
+        thead
+            tr
+                th Product Item
+                th Product Name
+                th Unit
+                th Quantity
+                th Extended Price
+                th Amount
+                th
+        tbody
+            tr
+                td VX90209
+                td
+                    p Valve 12 Inch, Cast Steel
+                    p Tyco Valve 12 Inch Diameter Made from Cast Steel
+                td Each
+                td
+                    .quantity
+                        input(type="text" value="1")
+                        button +
+                        button -
+                td 25,000.00
+                td 25,000.00
+                td
+                    button.btn.btn-primary.btn-sm(type="button") Remove
+    .row.justify-content-end
+        .col-lg-4
+            .hstack.gap-20.align-items-end
+                div
+                    p Items in Cart (2)
+                    p Amount in Cart (75,000.00)
+                div
+                    button.btn.btn-primary(type="button") Next

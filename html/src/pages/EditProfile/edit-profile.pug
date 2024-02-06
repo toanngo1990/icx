@@ -1,3 +1,15 @@
 extends ../../_layouts/default
 
 block container
+    .heading Edit Profile
+    .form-wrap
+        .row.gy-8
+            .col-lg-6
+                +input("First name", true)(value="ChatGPT")
+            .col-lg-6
+                +input("Last name", true)(value="Test")
+            .col-lg-6
+                +input("Mobile", false, "(Format: +66XXXXXXXXX, +66-XXX-XXX-XXX, +66 XXX XXX XXX)")
+            .col-lg-6
+                +input("Office Phone", true, "(Format: +66XXXXXXXXX, +66-XXX-XXX-XXX, +66 XXX XXX XXX)")(value="0867660808")
+        button.btn.btn-primary(type="button") Update

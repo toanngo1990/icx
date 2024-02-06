@@ -1,0 +1,9 @@
+.form-grid {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+
+    .form-label {
+        @extend .col-form-label;
+    }
+}

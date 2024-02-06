@@ -2,7 +2,7 @@ mixin icon(name)
     svg(role="img")&attributes(attributes)
         use(xlink:href="#icon-"+name)
 
-mixin input(label, required)
+mixin input(label, required, text)
     - var handle= label ? `${formName}-${label.toLowerCase().replace(/ /g,'-')}` : undefined
 
     label.form-label(for=handle)
@@ -10,6 +10,8 @@ mixin input(label, required)
         if required
             span *
     input.form-control(id=handle type="text")&attributes(attributes)
+    if text
+        .form-text= text
 
 mixin textarea(label, required)
     - var handle= label ? `${formName}-${label.toLowerCase().replace(/ /g,'-')}` : undefined

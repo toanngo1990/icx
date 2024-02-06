@@ -54,33 +54,129 @@
             <div class="main">
                 <div class="container-fluid">
                     <div class="main__body">
-                        <div class="heading">Edit Profile</div>
-                        <div class="form-wrap">
-                            <div class="row gy-8">
-                                <div class="col-lg-6">
-                                    <label class="form-label" for="undefined-first-name">First name<span>*</span>
+                        <div class="heading">Choose Products</div>
+                        <div class="cards">
+                            <div class="card">
+                                <div class="card__title">SignifyCRM Lite</div>
+                                <div class="card__description">THB800 per User per Month, Annual Payment</div>
+                            </div>
+                            <div class="card">
+                                <div class="card__title">SignifyCRM Standard</div>
+                                <div class="card__description">THB2,000 per User per Month, Annual Payment.</div>
+                            </div>
+                            <div class="card">
+                                <div class="card__title">Quick Start Implementation Services</div>
+                                <div class="card__description">THB50,000, One Time Payment</div>
+                            </div>
+                            <div class="card">
+                                <div class="card__title">Training Services</div>
+                                <div class="card__description">THB10,000 for Each Class</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="form-grid">
+                                    <label class="form-label" for="undefined-enter-product-item">Enter Product Item
                                     </label>
-                                    <input class="form-control" id="undefined-first-name" type="text" value="ChatGPT"/>
-                                </div>
-                                <div class="col-lg-6">
-                                    <label class="form-label" for="undefined-last-name">Last name<span>*</span>
-                                    </label>
-                                    <input class="form-control" id="undefined-last-name" type="text" value="Test"/>
-                                </div>
-                                <div class="col-lg-6">
-                                    <label class="form-label" for="undefined-mobile">Mobile
-                                    </label>
-                                    <input class="form-control" id="undefined-mobile" type="text"/>
-                                    <div class="form-text">(Format: +66XXXXXXXXX, +66-XXX-XXX-XXX, +66 XXX XXX XXX)</div>
-                                </div>
-                                <div class="col-lg-6">
-                                    <label class="form-label" for="undefined-office-phone">Office Phone<span>*</span>
-                                    </label>
-                                    <input class="form-control" id="undefined-office-phone" type="text" value="0867660808"/>
-                                    <div class="form-text">(Format: +66XXXXXXXXX, +66-XXX-XXX-XXX, +66 XXX XXX XXX)</div>
+                                    <input class="form-control" id="undefined-enter-product-item" type="text"/>
+                                    <label class="form-label">Choose from Category</label>
+                                    <select class="form-select">
+                                        <option>Option</option>
+                                        <option>Option</option>
+                                        <option>Option</option>
+                                    </select>
                                 </div>
                             </div>
-                            <button class="btn btn-primary" type="button">Update</button>
+                            <div class="col-lg-6">
+                                <div class="form-grid">
+                                    <label class="form-label" for="undefined-enter-product-name">Enter Product Name
+                                    </label>
+                                    <input class="form-control" id="undefined-enter-product-name" type="text"/>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="hstack gap-6">
+                            <button class="btn btn-primary" type="button">Search</button>
+                            <button class="btn btn-outline-primary" type="button">Clear</button>
+                        </div>
+                        <div class="hstack align-items-center justify-content-between">
+                            <div class="heading"></div>
+                            <div class="pagination">
+                                <button>
+                                    <svg role="img">
+                                        <use xlink:href="#icon-prev"></use>
+                                    </svg>
+                                    <svg role="img">
+                                        <use xlink:href="#icon-prev"></use>
+                                    </svg>
+                                </button>
+                                <button>
+                                    <svg role="img">
+                                        <use xlink:href="#icon-prev"></use>
+                                    </svg>
+                                </button><span>1-3 of 5</span>
+                                <button>
+                                    <svg role="img">
+                                        <use xlink:href="#icon-next"></use>
+                                    </svg>
+                                </button>
+                                <button>
+                                    <svg role="img">
+                                        <use xlink:href="#icon-next"></use>
+                                    </svg>
+                                    <svg role="img">
+                                        <use xlink:href="#icon-next"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>Product Item</th>
+                                    <th>Product Name</th>
+                                    <th>Unit</th>
+                                    <th>Quantity</th>
+                                    <th>Extended Price</th>
+                                    <th>Amount</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>VX90209</td>
+                                    <td>
+                                        <p>Valve 12 Inch, Cast Steel</p>
+                                        <p>Tyco Valve 12 Inch Diameter Made from Cast Steel</p>
+                                    </td>
+                                    <td>Each</td>
+                                    <td>
+                                        <div class="quantity">
+                                            <input type="text" value="1">
+                                            <button>+</button>
+                                            <button>-</button>
+                                        </div>
+                                    </td>
+                                    <td>25,000.00</td>
+                                    <td>25,000.00</td>
+                                    <td>
+                                        <button class="btn btn-primary btn-sm" type="button">Remove</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="row justify-content-end">
+                            <div class="col-lg-4">
+                                <div class="hstack gap-20 align-items-end">
+                                    <div>
+                                        <p>Items in Cart (2)</p>
+                                        <p>Amount in Cart (75,000.00)</p>
+                                    </div>
+                                    <div>
+                                        <button class="btn btn-primary" type="button">Next</button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="main__header">
