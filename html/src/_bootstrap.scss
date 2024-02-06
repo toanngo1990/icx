@@ -5,7 +5,7 @@ $variable-prefix: "";
 // $rfs-base-value: 1rem;
 // $min-contrast-ratio: 3;
 
-$font-family-sans-serif: "Gordita", sans-serif;
+// $font-family-sans-serif: "Gordita", sans-serif;
 $font-size-base: (14/16) * 1rem;
 $line-height-base: (20/14);
 
@@ -118,7 +118,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 @import "bootstrap/scss/badge";
 // @import "bootstrap/scss/modal";
 // @import "bootstrap/scss/tooltip";
-// @import "bootstrap/scss/offcanvas";
+@import "bootstrap/scss/offcanvas";
 @import "bootstrap/scss/placeholders";
 @import "bootstrap/scss/helpers";
 @import "bootstrap/scss/utilities/api";

@@ -1,0 +1,30 @@
+.navi {
+    padding: 20px 0;
+    background-color: var(--white);
+}
+
+.navi-list {
+    @include reset-list;
+    @include flex-column;
+    gap: 20px 0;
+
+    li {
+        a {
+            display: block;
+            padding: 10px 27px;
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--gray);
+            transition: $btn-transition;
+
+            &:hover {
+                color: var(--dark);
+            }
+
+            &.is-active {
+                background-color: rgba(var(--primary-rgb), .2);
+                color: var(--primary);
+            }
+        }
+    }
+}

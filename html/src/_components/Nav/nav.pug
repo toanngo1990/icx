@@ -1,7 +1,12 @@
-.navi
-    -
-        nav = ["Knowledge", "Download Corner", "My Cases", "Create New Case", "My Sales Orders", "My Account Contacts", "My Services Orders", "Service Level Agreement", "Edit Profile", "Change Password", "Logout"]
-    each val in nav
-        ul.navi-list
-            li
-                a(href="#")= val
+.offcanvas.offcanvas-end#offcanvasNavbar(tabindex="-1", aria-labelledby="offcanvasNavbarLabel")
+    .offcanvas-header
+        h5.offcanvas-title
+        button.btn-close(type="button", data-bs-dismiss="offcanvas", aria-label="Close")
+    .offcanvas-body
+        .navi
+            -
+                nav = ["Knowledge", "Download Corner", "My Cases", "Create New Case", "My Sales Orders", "My Account Contacts", "My Services Orders", "Service Level Agreement", "Edit Profile", "Change Password", "Logout"]
+            ul.navi-list
+                each val, index in nav
+                    li
+                        a(href="#" class=( index == 0 && "is-active" ))= val

@@ -1,3 +1,48 @@
+.dropdown-toggle {
+    &::after {
+        border: none;
+        width: 14px;
+        height: 9px;
+        background-image: url("data:image/svg+xml,%3Csvg width='14' height='9' viewBox='0 0 14 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.98595 0.983953L6.83307 6.21762L11.6806 0.983953C11.9635 0.671606 12.4326 0.671953 12.715 0.985375L12.7151 0.985512C12.9837 1.28412 12.984 1.75823 12.7151 2.05737L12.715 2.05755L7.35065 8.01459L7.35062 8.01462C7.06795 8.32842 6.59806 8.32852 6.31544 8.01456L0.951667 2.05754L0.951395 2.05724C0.683175 1.75837 0.6825 1.28467 0.95158 0.985513L0.951704 0.985375C1.23398 0.672017 1.7031 0.671542 1.98595 0.983953Z' fill='%235C5F62' stroke='%235C5F62' stroke-width='0.5'/%3E%3C/svg%3E%0A");
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+    }
+}
+
+.card {
+    padding: 30px;
+    background-color: var(--white);
+    border: thin solid rgba(var(--black-rgb), .16);
+    border-radius: 4px;
+    box-shadow: 0 2px 2px rgba(var(--black-rgb), .12);
+}
+
+.card-info {
+    &__title {
+        font-size: 15px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+    &__content {
+        color: var(--gray);
+        padding: 0 10px;
+
+        p {
+            margin-bottom: 10px;
+        }
+    }
+}
+
+.info {
+    font-size: 15px;
+    font-weight: 500;
+
+    p {
+        margin-bottom: 12px;
+    }
+}
+
 .table {
     display: block;
     width: 100%;

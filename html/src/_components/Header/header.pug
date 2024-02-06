@@ -1,34 +1,35 @@
 .header
     .container-fluid
         a.logo(href="./")
-            img(src="images/logo.svg" alt="")
-        .tools
-            .tools__item
-                a(href="#")
-                    +icon("search")
-            .tools__item
-                a(href="#")
-                    +icon("notify")
-            .tools__item
-                .dropdown
-                    button.dropdown-toggle(type="button" data-bs-toggle="dropdown" aria-expanded="false")
-                        span
-                            img(src="images/avatar.jpg" alt="")
-                        span Johnson
-                    ul.dropdown-menu
-                        li
-                            a.dropdown-item(href="#") Action
-                        li
-                            a.dropdown-item(href="#") Another action
-                        li
-                            a.dropdown-item(href="#") Something else here
+            img(src="images/logo.png" alt="")
+        .hstack.gap-8.tools.ms-auto
+            a(href="#")
+                +icon("search")
+            a(href="#")
+                +icon("notify")
+                span.notify-badge 4
+            .dropdown
+                button.dropdown-toggle(type="button" data-bs-toggle="dropdown" aria-expanded="false")
+                    span
+                        img(src="images/avatar.jpg" alt="")
+                    span Johnson
+                ul.dropdown-menu
+                    li
+                        a.dropdown-item(href="#") Action
+                    li
+                        a.dropdown-item(href="#") Another action
+                    li
+                        a.dropdown-item(href="#") Something else here
+        button.menu(type="button", data-bs-toggle="offcanvas", data-bs-target="#offcanvasNavbar", aria-controls="offcanvasNavbar", aria-label="Toggle navigation")
+            +icon("menu")
+
 .navibar
     .container-fluid
         -
             nav = ["Customer Portal", "Home", "Knowledge", "Download Corner", "My Cases", "Create New Case", "Contact Us"]
         ul.navibar-nav
-            each val in nav
+            each val, index in nav
                 li
-                    a(href="#")= val
+                    a(href="#" class=(index == 0 && "is-active"))= val
 
 
