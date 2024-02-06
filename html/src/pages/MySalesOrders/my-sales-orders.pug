@@ -22,18 +22,7 @@ block container
         button.btn-add(type="button") +
     .hstack.align-items-center.justify-content-between
         .heading Your Recent Orders
-        .pagination
-            button
-                +icon("prev")
-                +icon("prev")
-            button
-                +icon("prev")
-            span 1-3 of 5
-            button
-                +icon("next")
-            button
-                +icon("next")
-                +icon("next")
+        +pagination("1-3 of 5")
     table.table
         thead
             tr

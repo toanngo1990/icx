@@ -40,3 +40,17 @@ mixin search-input
     .seach-input
         input(type="text" placeholder="Search the documentation...")
         +icon("search")
+
+mixin pagination(text)
+    .pagination
+        button
+            +icon("prev")
+            +icon("prev")
+        button
+            +icon("prev")
+        span= text
+        button
+            +icon("next")
+        button
+            +icon("next")
+            +icon("next")

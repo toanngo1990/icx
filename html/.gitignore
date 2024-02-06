@@ -1,4 +1,2 @@
 node_modules/
 *.map
-dist/css/*.css
-!dist/css/*min.css
