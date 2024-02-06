@@ -43,32 +43,7 @@ block container
             button
                 +icon("next")
                 +icon("next")
-    table.table
-        thead
-            tr
-                th Product Item
-                th Product Name
-                th Unit
-                th Quantity
-                th Extended Price
-                th Amount
-                th
-        tbody
-            tr
-                td VX90209
-                td
-                    p Valve 12 Inch, Cast Steel
-                    p Tyco Valve 12 Inch Diameter Made from Cast Steel
-                td Each
-                td
-                    .quantity
-                        input(type="text" value="1")
-                        button +
-                        button -
-                td 25,000.00
-                td 25,000.00
-                td
-                    button.btn.btn-primary.btn-sm(type="button") Remove
+    include ../../_components/ProductOrder/product-order
     .row.justify-content-end
         .col-lg-4
             .hstack.gap-20.align-items-end

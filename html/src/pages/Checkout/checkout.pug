@@ -1,0 +1,59 @@
+extends ../../_layouts/default
+
+block container
+    .heading Checkout
+    .row
+        .col-lg-6
+            .form-grid
+                label.form-label Order No:
+                div Auto
+                label.form-label Account Name
+                div Muller machnics
+                +input("Contact:")
+                label.form-label Order Date
+                div 12-Feb-2017
+        .col-lg-6
+            .form-grid
+                label.form-label Order Status:
+                div New
+                +input("Billing Address:")
+                +input("Shipping Address:")
+        include ../../_components/ProductOrder/product-order
+        .my-20
+            button.btn.btn-primary(type="button") Add More Product
+        table.summary
+            tbody
+                tr
+                    td Currency:
+                    td Thai Baht
+                    td Sub total:
+                    td 75,000.00
+                tr
+                    td
+                    td
+                    td Tax (7%)
+                    td 5,250.00
+                tr.fw-bold
+                    td
+                    td
+                    td Total
+                    td 80,450.00
+        +textarea("Order Note:")(rows="3")
+        .heading Credit Card Information
+        .row.g-20
+            .col-auto
+                .row.g-5
+                    +input-inline("Card No.")
+            .col-auto
+                .row.g-5
+                    +input-inline("Expiration Date")
+            .col-auto
+                .row.g-5
+                    +input-inline("CCV")
+        .payments
+            img(src="images/visa.svg", alt="")
+            img(src="images/mastercard.svg", alt="")
+            img(src="images/jcb.svg", alt="")
+        .hstack.g-6
+            button.btn.btn-primary(type="button") Proceed
+            button.btn.btn-outline-primary(type="button") Cancel
