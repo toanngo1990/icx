@@ -1,0 +1,169 @@
+extends ../../_layouts/default
+
+block container
+    .heading How to check no. of users.
+    .description Last Updated 23/09/2023 14:56 PM
+    .block
+        .row
+            .col-lg-2
+                .block__heading Step 1
+            .col-lg
+                .block__title Admin
+                .step-1
+                    .step-1__header
+                        ul
+                            li
+                                a(href="#")
+                                    +icon("person")
+                                    span Welcome
+                            li
+                                a(href="#")
+                                    +icon("logout")
+                                    span Logout
+                            li
+                                a.dropdown(href="#")
+                                    +icon("settings")(class="dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false")
+                                    ul.dropdown-menu
+                                        li
+                                            a.dropdown-item(href="#") My Account
+                                        li
+                                            a.dropdown-item(href="#") Admin
+                                        li
+                                            a.dropdown-item(href="#") Page Style
+    .block
+        .row
+            .col-lg-2
+                .block__heading Step 2
+            .col-lg
+                .block__title User Management
+                .step-2
+                    .step-2__header
+                        .step-2__title User Security
+                        .step-2__description Create, edit, activate and deactivate User. Manage Role and Group Secutity.
+                    .is-active
+                        .hstack.g-4.align-items-center
+                            img(src="images/user-management.svg" alt="")
+                            span User Management
+                    div Manage user accounts and paswords
+                    div
+                        .hstack.g-4.align-items-center
+                            img(src="images/password-management.svg" alt="")
+                            span Password Management
+                    div Manage password requirements and expiration
+                    div
+                        .hstack.g-4.align-items-center
+                            img(src="images/role-management.svg" alt="")
+                            span Role Management
+                    div Manage role security, which modules and What action the role is authorized to perform.
+                    div
+                        .hstack.g-4.align-items-center
+                            img(src="images/group-management.svg" alt="")
+                            span Group Management
+                    div Manage group security, which record data the group is authorized to access
+    .block
+        .row
+            .col-lg-2
+                .block__heading Step 3
+            .col-lg
+                .block__title Status Active
+                .step-3
+                    .step-3__heading Users: Home
+                    ul.nav.nav-tabs
+                        li.nav-item
+                            a.nav-link.active(aria-current="page" href="#") Basic Search
+                        li.nav-item
+                            a.nav-link(href="#") Advanced Search
+                    .row
+                        .col-lg-3
+                            .row
+                                +input-inline("First Name")
+                        .col-lg-3
+                            .row
+                                +input-inline("Last Name")
+                        .col-lg-3
+                            .row
+                                +input-inline("Department")
+                        .col-lg-3
+                            .row
+                                .col-auto
+                                    label.form-label Status
+                                .col-auto
+                                    select.form-select
+                                        option None
+                                        option Active
+                                        option Inactive
+                    .row
+                        .col-auto
+                            .hstack
+                                button.btn.btn-primary(type="button") Search
+                                button.btn.btn-outline-primary(type="button") Clear
+                        .col-auto
+                            .row
+                                .col-auto
+                                    label.form-label Saved Searches
+                                .col-auto
+                                    select.form-select
+                                        option None
+                                        option Active
+                                        option Inactive
+    .block
+        .row
+            .col-lg-2
+                .block__heading Step 4
+            .col-lg
+                .block__title Active Export User .CSV
+                .export-wrap
+                    .row.justify-content-between
+                        .col-auto
+                            .hstack.align-items-center
+                                select
+                                    option Select
+                                    option Option
+                                button.btn.btn-gray.btn-sm(type="button") Export
+                                span Selected: 0
+                        .col-auto
+                            +pagination("1-20 of 48")
+                    table.export-table
+                        thead
+                            tr
+                                th
+                                    input(type="checkbox")
+                                th
+                                    span Name
+                                th
+                                    span User Name
+                                th
+                                    span Title
+                                th
+                                    span Department
+                                th Email
+                                th
+                                    span Phone
+                                th
+                                    span Status
+                                th
+                                    span System Administrator
+                        tbody
+                            each val in [1, 2, 3, 4, 5, 6, 7, 8, 9]
+                                tr
+                                    td
+                                        .hstack
+                                            input(type="checkbox")
+                                            button.btn-icon(type="button")
+                                                +icon("star")
+                                            button.btn-icon(type="button")
+                                                +icon("edit")
+                                    td ABCDEFG
+                                    td ABCDEFG
+                                    td Support Analyst
+                                    td DEV
+                                    td icxdummy@gmail.com
+                                    td 0123456789
+                                    td Active
+                                    td
+                                        .hstack
+                                            input(type="checkbox")
+                                            button.btn-icon(type="button")
+                                                +icon("edit")
+    figure.m-0
+        img(src="images/banner.png", alt="")
