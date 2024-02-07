@@ -1,26 +1,27 @@
 extends ../../_layouts/default
 
 block container
-    .heading Checkout
-    .row
+    .heading.mb-10 Checkout
+    .row.mb-20
         .col-lg-6
             .form-grid
                 label.form-label Order No:
-                div Auto
+                .col-form-label.text-secondary Auto
                 label.form-label Account Name
-                div Muller machnics
+                .col-form-label.text-secondary Muller machnics
                 +input("Contact:")
                 label.form-label Order Date
-                div 12-Feb-2017
+                .col-form-label.text-secondary 12-Feb-2017
         .col-lg-6
             .form-grid
                 label.form-label Order Status:
-                div New
+                .col-form-label.text-secondary New
                 +input("Billing Address:")
                 +input("Shipping Address:")
-        include ../../_components/ProductOrder/product-order
-        .my-20
-            button.btn.btn-primary(type="button") Add More Product
+    include ../../_components/ProductOrder/product-order
+    .my-20
+        button.btn.btn-primary(type="button") Add More Product
+    .table-wrap.mb-20
         table.summary
             tbody
                 tr
@@ -38,22 +39,23 @@ block container
                     td
                     td Total
                     td 80,450.00
-        +textarea("Order Note:")(rows="3")
-        .heading Credit Card Information
-        .row.g-20
-            .col-auto
-                .row.g-5
-                    +input-inline("Card No.")
-            .col-auto
-                .row.g-5
-                    +input-inline("Expiration Date")
-            .col-auto
-                .row.g-5
-                    +input-inline("CCV")
-        .payments
-            img(src="images/visa.svg", alt="")
-            img(src="images/mastercard.svg", alt="")
-            img(src="images/jcb.svg", alt="")
-        .hstack.g-6
-            button.btn.btn-primary(type="button") Proceed
-            button.btn.btn-outline-primary(type="button") Cancel
+    .mb-20
+        +textarea("Order Note:")(rows="5")
+    .heading.mb-10 Credit Card Information
+    .row.g-20.mb-20
+        .col-auto
+            .row.g-5
+                +input-inline("Card No.")
+        .col-auto
+            .row.g-5
+                +input-inline("Expiration Date")
+        .col-auto
+            .row.g-5
+                +input-inline("CCV")
+    .payments.mb-20
+        img(src="images/visa.svg", alt="")
+        img(src="images/mastercard.svg", alt="")
+        img(src="images/jcb.svg", alt="")
+    .hstack.gap-6
+        button.btn.btn-primary.btn-min(type="button") Proceed
+        button.btn.btn-outline-primary.btn-min(type="button") Cancel

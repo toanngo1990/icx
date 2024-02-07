@@ -1,23 +1,42 @@
 extends ../../_layouts/default
 
 block container
-    .row
+    .row.mb-15
         .col-lg-4
             +search-input
-    .heading Basic use
-    table.table
-        thead
-            tr
-                th(colspan="2") Article Name
-                th
-                th Article Name
-                th
-        tbody
-            tr
-                td
-                td
-                    .title The role of CRM Admin in managing data in the CRM system
-                    .description Why do organizations need a CRM Admin? 1. Problems of misunderstanding Don't understand the information I don't understand the steps to use...
-                td
-                td 2022-10-12 16:37
-                td -
+    .heading.mb-10 Basic use
+    .table-wrap
+        table.table
+            thead
+                tr
+                    th Article Name
+                    th Article Name
+                    th Article Name
+            tbody
+                tr
+                    td
+                        a.article(href="#")
+                            .article__header
+                                .img-drop.article__image
+                                    img(src="images/article-1.png", alt="")
+                            .article__body
+                                .article__title The role of CRM Admin in managing data in the CRM system
+                                .article__description Why do organizations need a CRM Admin? 1. Problems of misunderstanding Don't understand the information I don't understand the steps to use...
+                            .article__footer
+                                img(src="images/new.png", alt="")
+                    td.text-nowrap 2022-10-12 16:37
+                    td -
+                each val in [1, 2, 3, 4]
+                    tr
+                        td
+                            .article
+                                .article__header
+                                    a.img-drop.article__image(href="#")
+                                        img(src="images/article-default.png", alt="")
+                                a.article__body(href="#")
+                                    .article__title First time user settings
+                                    .article__description First time user settings
+                                .article__footer
+                                    img(src="images/new.png", alt="")
+                        td.text-nowrap 2022-10-12 16:37
+                        td -

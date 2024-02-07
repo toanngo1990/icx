@@ -1,9 +1,9 @@
 extends ../../_layouts/default
 
 block container
-    .heading Edit Profile
+    .heading.mb-10 Edit Profile
     .form-wrap
-        .row.gy-8
+        .row.gy-8.mb-15
             .col-lg-6
                 +input("First name", true)(value="ChatGPT")
             .col-lg-6
@@ -12,4 +12,4 @@ block container
                 +input("Mobile", false, "(Format: +66XXXXXXXXX, +66-XXX-XXX-XXX, +66 XXX XXX XXX)")
             .col-lg-6
                 +input("Office Phone", true, "(Format: +66XXXXXXXXX, +66-XXX-XXX-XXX, +66 XXX XXX XXX)")(value="0867660808")
-        button.btn.btn-primary(type="button") Update
+        button.btn.btn-primary.btn-min(type="button") Update

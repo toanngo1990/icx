@@ -6,15 +6,15 @@ svg[role="img"] {
     vertical-align: middle;
 }
 
-.v-icon {
+.icon {
     display: inline-flex;
     justify-content: center;
     align-items: center;
     vertical-align: middle;
 }
 
-.v-icon-minus,
-.v-icon-plus {
+.icon-minus,
+.icon-plus {
     font-size: 7px;
     width: 1em;
     height: 1em;
@@ -28,7 +28,7 @@ svg[role="img"] {
     }
 }
 
-.v-icon-plus {
+.icon-plus {
     position: relative;
 
     &::after {
@@ -43,7 +43,7 @@ svg[role="img"] {
     }
 }
 
-.v-icon-remove {
+.icon-remove {
     width: 1em;
     height: 1em;
     position: relative;

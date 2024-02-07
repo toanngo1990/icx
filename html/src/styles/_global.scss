@@ -49,8 +49,6 @@ textarea {
 }
 
 .main {
-    flex: 1 1 auto;
-
     > div {
         display: grid;
         gap: 20px;
@@ -63,5 +61,6 @@ textarea {
 
     &__body {
         padding: 20px 0 40px;
+        overflow: hidden;
     }
 }

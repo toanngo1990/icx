@@ -3,8 +3,8 @@ extends ../../_layouts/default
 block container
     .row.mb-20
         .col-lg-10
-            .heading Submit a new case
-            .form-wrap
+            .heading.mb-10 Submit a new case
+            .form-wrap.mb-20
                 .row.gy-8
                     .col-lg-6
                         +input("Subject", true)
@@ -14,16 +14,18 @@ block container
                             each val in ["Question", "Other option"]
                                 option= val
                     .col-12
-                        +textarea("Description", true)(rows="3")
-            .heading Note and Attachment (optional)
+                        +textarea("Description", true)(rows="5")
+            .heading.mb-10 Note and Attachment (optional)
             .form-wrap
-                +textarea("Short description:", true)(rows="3")
-                .row.align-items-center
-                    .col-auto
-                        label.form-label Attachment:
-                    .col-auto
-                        input.form-control(type="file")
+                .row.gy-10.mb-15
                     .col-12
-                        .form-text (Supported File Formats: gif, png, jpg, jpeg, txt, pdf, doc, docx, csv, xml, xls, xlsx)
-                button.btn.btn-primary(type="button") Submit
+                        +textarea("Short description:", true)(rows="5")
+                    .col-12
+                        .row.align-items-center
+                            label.form-label.col-auto.col-form-label Attachment:
+                            .col-auto
+                                input.form-control(type="file")
+                            .col-12
+                                .form-text (Supported File Formats: gif, png, jpg, jpeg, txt, pdf, doc, docx, csv, xml, xls, xlsx)
+                button.btn.btn-primary.btn-min(type="button") Submit
 

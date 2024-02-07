@@ -3,7 +3,7 @@ extends ../../_layouts/default
 block container
     .row.mb-20
         .col-lg-6
-            .card.card-info
+            .card-info
                 .card-info__title Your Support Overview - Signify Customer Portal (chat GPT Test)
                 .card-info__content
                     p For support assistance, you may contact:
@@ -17,34 +17,48 @@ block container
                     p +662-863-6038 ext. 304
                     p
                         a(href="#") saranb@signify.co.th
-    .hstack.align-items-center.mb-20
-        .heading Place New Order
-        button.btn-add(type="button") +
-    .hstack.align-items-center.justify-content-between
-        .heading Your Recent Orders
+    .hstack.align-items-center.mb-20.gap-15
+        .heading-small Place New Order
+        button.btn.btn-danger.btn-sm(type="button")
+            .icon.icon-plus.mx-4
+    .hstack.align-items-center.justify-content-between.mb-10
+        .heading-small Your Recent Orders
         +pagination("1-3 of 5")
-    table.table
-        thead
-            tr
-                th Order N0.
-                th Order Date
-                th Account
-                th Type
-                th Status
-                th Sub Total
-                th Tax Amount
-                th Total Amount
-                th
-        tbody
-            tr
-                td S017-003
-                td 2023-05-24
-                td Muller Mechanics
-                td Sales
-                td
-                    span.badge.text-bg-warning New
-                td 100.00
-                td 7.00
-                td 107.00
-                td
-                    span.badge.text-bg-primary Re-Order
+    .table-wrap
+        table.table
+            thead
+                tr
+                    th Order N0.
+                    th Order Date
+                    th Account
+                    th Type
+                    th Status
+                    th Sub Total
+                    th Tax Amount
+                    th Total Amount
+                    th
+            tbody
+                tr
+                    td S017-003
+                    td 2023-05-24
+                    td Muller Mechanics
+                    td Sales
+                    td
+                        span.badge.text-bg-warning New
+                    td 100.00
+                    td 7.00
+                    td 107.00
+                    td
+                        span.badge.badge--sm.text-bg-primary Re-Order
+                tr
+                    td S017-003
+                    td 2023-05-24
+                    td Muller Mechanics
+                    td Sales
+                    td
+                        span.badge.text-bg-light Committed
+                    td 100.00
+                    td 7.00
+                    td 107.00
+                    td
+                        span.badge.badge--sm.text-bg-primary Re-Order

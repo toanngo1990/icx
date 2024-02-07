@@ -1,8 +1,8 @@
 extends ../../_layouts/default
 
 block container
-    .heading Choose Products
-    .cards
+    .heading.mb-10 Choose Products
+    .cards.cards--four.mb-20
         -
             newOrder = [
                 ["SignifyCRM Lite", "THB800 per User per Month, Annual Payment"],
@@ -12,9 +12,9 @@ block container
             ]
         each val in newOrder
             .card
-                .card__title= val[0]
-                .card__description= val[1]
-    .row
+                .mb-5= val[0]
+                .text-secondary= val[1]
+    .row.mb-20
         .col-lg-6
             .form-grid
                 +input("Enter Product Item")
@@ -27,9 +27,9 @@ block container
             .form-grid
                 +input("Enter Product Name")
     .hstack.gap-6
-        button.btn.btn-primary(type="button") Search
-        button.btn.btn-outline-primary(type="button") Clear
-    .hstack.align-items-center.justify-content-between
+        button.btn.btn-primary.btn-min(type="button") Search
+        button.btn.btn-outline-primary.btn-min(type="button") Clear
+    .hstack.align-items-center.justify-content-between.mb-10
         .heading
         .pagination
             button

@@ -100,6 +100,12 @@
     @include media-breakpoint-up(xl) {
         grid-template-columns: repeat(3, 1fr);
     }
+
+    &--four {
+        @include media-breakpoint-up(xl) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+    }
 }
 
 .info {
@@ -108,23 +114,6 @@
 
     p {
         margin-bottom: 12px;
-    }
-}
-
-.table {
-    display: block;
-    width: 100%;
-    border-collapse: separate;
-    border-spacing: 0 10px;
-
-    tbody {
-        td {
-            background-color: gray;
-
-            &:first-child {
-                border-radius: 10px 0 0 10px;
-            }
-        }
     }
 }
 
@@ -184,5 +173,195 @@
                 color: var(--primary);
             }
         }
+    }
+}
+
+.heading {
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.heading-small {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.table-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+.table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 10px;
+    margin-top: -10px;
+
+    th,
+    td {
+        padding-left: 20px;
+        padding-right: 20px;
+
+        &:first-child {
+            border-radius: 4px 0 0 4px;
+        }
+
+        &:last-child {
+            border-radius: 0 4px 4px 0;
+        }
+    }
+
+    thead {
+        th,
+        td {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            background-color: #DFE2E7;
+            font-size: 13px;
+            font-weight: 500;
+            color: var(--gray-700);
+            vertical-align: top;
+        }
+    }
+
+    tbody {
+        th,
+        td {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            background-color: var(--white);
+        }
+    }
+}
+
+.article {
+    display: grid;
+    grid-template-columns: 139px 1fr 34px;
+    align-items: center;
+    gap: 20px;
+    min-width: 400px;
+    color: var(--black);
+
+    &__header {
+        align-self: start;
+    }
+
+    &__image {
+        @include img-drop(139, 94);
+    }
+
+    &__title {
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+
+    &__description {
+        font-size: 12px;
+        color: var(--gray);
+    }
+}
+
+.doc {
+    display: grid;
+    grid-template-columns: 66px 1fr;
+    gap: 20px;
+    min-width: 400px;
+    color: var(--black);
+
+    &__body {
+        align-self: center;
+    }
+
+    &__title {
+        font-size: 15px;
+        margin-bottom: 5px;
+    }
+
+    &__description {
+        font-size: 12px;
+        color: var(--gray);
+    }
+}
+
+.pagination {
+    display: flex;
+    align-items: center;
+    gap: 1px;
+
+    button {
+        appearance: none;
+        width: 36px;
+        height: 24px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        border-radius: 6px;
+        background-color: var(--primary);
+        color: var(--white);
+        font-size: 7px;
+
+        &:hover {
+            background-color: darken($color: $primary, $amount: 10);
+        }
+    }
+
+    span {
+        margin: 0 9px;
+        font-size: 10px;
+        color: var(--gray);
+    }
+}
+
+.badge {
+    &--sm {
+        --badge-padding-x: 8px;
+        --badge-padding-y: 6px;
+        --badge-font-size: 10px;
+        --badge-border-radius: 6px;
+    }
+}
+
+.quantity {
+    display: inline-flex;
+    align-items: center;
+    gap: 1px;
+
+    button {
+        appearance: none;
+        width: 36px;
+        height: 24px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        border: none;
+        border-radius: 6px;
+        background-color: var(--primary);
+        color: var(--white);
+
+        &:hover {
+            background-color: darken($color: $primary, $amount: 10);
+        }
+    }
+
+    input {
+        appearance: none;
+        font-size: 15px;
+        padding: 0 10px;
+        border: none;
+        border-radius: 0;
+        background-color: transparent;
+        width: 50px;
+        text-align: right;
+    }
+}
+
+.payments {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    img {
+        height: 48px;
     }
 }

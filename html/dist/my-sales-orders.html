@@ -60,7 +60,7 @@
                     <div class="main__body">
                         <div class="row mb-20">
                             <div class="col-lg-6">
-                                <div class="card card-info">
+                                <div class="card-info">
                                     <div class="card-info__title">Your Support Overview - Signify Customer Portal (chat GPT Test)</div>
                                     <div class="card-info__content">
                                         <p>For support assistance, you may contact:</p>
@@ -76,12 +76,14 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="hstack align-items-center mb-20">
-                            <div class="heading">Place New Order</div>
-                            <button class="btn-add" type="button">+</button>
+                        <div class="hstack align-items-center mb-20 gap-15">
+                            <div class="heading-small">Place New Order</div>
+                            <button class="btn btn-danger btn-sm" type="button">
+                                <div class="icon icon-plus mx-4"></div>
+                            </button>
                         </div>
-                        <div class="hstack align-items-center justify-content-between">
-                            <div class="heading">Your Recent Orders</div>
+                        <div class="hstack align-items-center justify-content-between mb-10">
+                            <div class="heading-small">Your Recent Orders</div>
                             <div class="pagination">
                                 <button>
                                     <svg role="img">
@@ -111,34 +113,47 @@
                                 </button>
                             </div>
                         </div>
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th>Order N0.</th>
-                                    <th>Order Date</th>
-                                    <th>Account</th>
-                                    <th>Type</th>
-                                    <th>Status</th>
-                                    <th>Sub Total</th>
-                                    <th>Tax Amount</th>
-                                    <th>Total Amount</th>
-                                    <th></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>S017-003</td>
-                                    <td>2023-05-24</td>
-                                    <td>Muller Mechanics</td>
-                                    <td>Sales</td>
-                                    <td><span class="badge text-bg-warning">New</span></td>
-                                    <td>100.00</td>
-                                    <td>7.00</td>
-                                    <td>107.00</td>
-                                    <td><span class="badge text-bg-primary">Re-Order</span></td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <div class="table-wrap">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Order N0.</th>
+                                        <th>Order Date</th>
+                                        <th>Account</th>
+                                        <th>Type</th>
+                                        <th>Status</th>
+                                        <th>Sub Total</th>
+                                        <th>Tax Amount</th>
+                                        <th>Total Amount</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>S017-003</td>
+                                        <td>2023-05-24</td>
+                                        <td>Muller Mechanics</td>
+                                        <td>Sales</td>
+                                        <td><span class="badge text-bg-warning">New</span></td>
+                                        <td>100.00</td>
+                                        <td>7.00</td>
+                                        <td>107.00</td>
+                                        <td><span class="badge badge--sm text-bg-primary">Re-Order</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>S017-003</td>
+                                        <td>2023-05-24</td>
+                                        <td>Muller Mechanics</td>
+                                        <td>Sales</td>
+                                        <td><span class="badge text-bg-light">Committed</span></td>
+                                        <td>100.00</td>
+                                        <td>7.00</td>
+                                        <td>107.00</td>
+                                        <td><span class="badge badge--sm text-bg-primary">Re-Order</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
                     <div class="main__header">
                         <div class="offcanvas offcanvas-end" id="offcanvasNavbar" tabindex="-1" aria-labelledby="offcanvasNavbarLabel">

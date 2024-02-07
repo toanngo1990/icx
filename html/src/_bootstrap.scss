@@ -9,21 +9,21 @@ $variable-prefix: "";
 $font-size-base: (14/16) * 1rem;
 $line-height-base: (20/14);
 
+$gray-100: #f3f3f3;
 $gray-200: #eef1f6;
 $gray-300: #d9d9d9;
 $gray-600: #5c5f62;
+$gray-700: #484b4e;
 $blue: #365ac6;
+$yellow: #ffff54;
 $primary: $blue;
-// $secondary: #979454;
+$secondary: $gray-600;
 
 $focus-ring-box-shadow: none;
 
 $link-decoration: none;
 $link-shade-percentage: 30%;
 $link-color: $blue;
-
-// $h1-font-size: 48px;
-// $headings-font-weight: 700;
 
 $offcanvas-border-width: 0;
 $hr-opacity: 0.2;
@@ -39,16 +39,29 @@ $accordion-padding-x: 0;
 $accordion-button-active-bg: none;
 $accordion-button-active-color: inherit;
 
-$btn-border-radius: 0;
-$btn-padding-x: 18px;
-$btn-padding-y: 10px;
-$btn-font-size: 1rem;
-$btn-line-height: 1.5;
+$btn-border-radius: 6px;
+$btn-padding-x: 16px;
+$btn-padding-y: 8px;
+$btn-font-size: 14px;
+$btn-line-height: (20/14);
 $btn-font-weight: 500;
+$btn-padding-x-sm: 8px;
 
 $dropdown-border-radius: 0;
 $dropdown-font-size: 12px;
 $dropdown-link-hover-bg: rgba(var(--primary-rgb), 0.2);
+
+$input-border-radius: 6px;
+$input-border-color: rgba(var(--dark-rgb), 0.14);
+$input-font-size: 14px;
+$form-label-margin-bottom: 6px;
+$form-select-focus-box-shadow: none;
+
+$badge-font-size: 14px;
+$badge-font-weight: normal;
+$badge-padding-y: 5px;
+$badge-padding-x: 10px;
+$badge-border-radius: 4px;
 
 // Required Bootstrap imports
 @import "bootstrap/scss/variables";
