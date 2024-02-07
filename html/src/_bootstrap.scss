@@ -10,6 +10,7 @@ $font-size-base: (14/16) * 1rem;
 $line-height-base: (20/14);
 
 $gray-200: #eef1f6;
+$gray-300: #d9d9d9;
 $gray-600: #5c5f62;
 $blue: #365ac6;
 $primary: $blue;
@@ -47,7 +48,7 @@ $btn-font-weight: 500;
 
 $dropdown-border-radius: 0;
 $dropdown-font-size: 12px;
-$dropdown-link-hover-bg: rgba(var(--primary-rgb), .2);
+$dropdown-link-hover-bg: rgba(var(--primary-rgb), 0.2);
 
 // Required Bootstrap imports
 @import "bootstrap/scss/variables";
@@ -55,7 +56,7 @@ $dropdown-link-hover-bg: rgba(var(--primary-rgb), .2);
 
 // Map overrides here
 $custom-colors: (
-    "border": $gray-100
+    "border": $gray-300
 );
 
 $spacers: (
@@ -80,6 +81,15 @@ $spacers: (
     18: $spacer * 18 / 8,
     19: $spacer * 19 / 8,
     20: $spacer * 20 / 8,
+    21: $spacer * 21 / 8,
+    22: $spacer * 22 / 8,
+    23: $spacer * 23 / 8,
+    24: $spacer * 24 / 8,
+    25: $spacer * 25 / 8,
+    26: $spacer * 26 / 8,
+    27: $spacer * 27 / 8,
+    28: $spacer * 28 / 8,
+    29: $spacer * 29 / 8,
     30: $spacer * 30 / 8,
     31: $spacer * 31 / 8,
     32: $spacer * 32 / 8,
@@ -90,7 +100,7 @@ $spacers: (
     37: $spacer * 37 / 8,
     38: $spacer * 38 / 8,
     39: $spacer * 39 / 8,
-    40: $spacer * 20 / 8
+    40: $spacer * 40 / 8
 );
 
 $theme-colors: map-merge($theme-colors, $custom-colors);

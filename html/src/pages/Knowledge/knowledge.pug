@@ -3,10 +3,11 @@ extends ../../_layouts/default
 block container
     figure.mb-20
         img(src="images/knowledge.svg" alt="")
-    .search.mb-25
-        .search-title How can we help
-        +search-input
-    ul.tabs.mb-30
+    .row.mb-25.justify-content-center.search
+        .col-lg-4
+            .search-title How can we help
+            +search-input
+    ul.tabs.mb-15
         li
             a.is-active(href="#") Overview
         li
@@ -14,36 +15,96 @@ block container
     .cards
         .card
             .card__header
-                .card__image
+                .img-drop.card__image
                     img(src="images/thumb-1.png" alt="")
                 .card__title Recommended use
             .card__body
                 ul.card-list
-                    -
-                        list = [
-                            "Basic use (5)",
-                            "Video of using the service module/receiving matters (1)",
-                            "Clearing data when CRM version is updated (1)",
-                            "Using the Customer Portal (1)"
-                        ]
-                    each val in list
-                        li
-                            a(href="#")= val
+                    li
+                        a(href="#") Basic use (5)
+                    li
+                        a(href="#") Video of using the service module/receiving matters (1)
+                    li
+                        a(href="#") Clearing data when CRM version is updated (1)
+                    li
+                        a(href="#") Using the Customer Portal (1)
         .card
             .card__header
-                .card__image
-                    img(src="images/thumb-1.png" alt="")
+                .img-drop.card__image
+                    img(src="images/thumb-2.png" alt="")
                 .card__title Recommended use
             .card__body
                 ul.card-list
-                    -
-                        list = [
-                            "Importing data into and out of the system (4)",
-                            "Massive data updates (1)",
-                            "Create product information (1)"
-                        ]
-                    each val in list
-                        li
-                            a(href="#")= val
+                    li
+                        a(href="#") Importing data into and out of the system (4)
+                    li
+                        a(href="#") Massive data updates (1)
+                    li
+                        a(href="#") Create product information (1)
+        .card
+            .card__header
+                .img-drop.card__image
+                    img(src="images/thumb-3.png" alt="")
+                .card__title Sales module
+            .card__body
+                ul.card-list
+                    li
+                        a(href="#") Video of using the sales module (2)
+                    li
+                        a(href="#") การตั้งค่า Product Catalog ในโมดูลบัญชีลูกค้า (1)
+        .card
+            .card__header
+                .img-drop.card__image
+                    img(src="images/thumb-4.png" alt="")
+                .card__title Mobile Application
+            .card__body
+                ul.card-list
+                    li
+                        a(href="#") Setting up Mobile CRM (2)
+                    li
+                        a(href="#") Mobile CRM usage video (1)
+                    li
+                        a(href="#") Using Speech to Text on Mobile Application (1)
+                    li
+                        a(href="#") Basic solution for Smart Phones with the Android operating system that encounter problems with stuck GPS Location data. (1)
+        .card
+            .card__header
+                .img-drop.card__image
+                    img(src="images/thumb-5.png" alt="")
+                .card__title Marketing and product management module
+            .card__body
+                ul.card-list
+                    li
+                        a(href="#") Marketing emails (3)
+        .card
+            .card__header
+                .img-drop.card__image
+                    img(src="images/thumb-6.png" alt="")
+                .card__title Reports and Workflow
+            .card__body
+                ul.card-list
+                    li
+                        a(href="#") Using Ad-Hoc Reports (1)
+                    li
+                        a(href="#") Report comparing plans and results (1)
+        .card
+            .card__header
+                .img-drop.card__image
+                    img(src="images/thumb-7.png" alt="")
+                .card__title Set up the system
+            .card__body
+                ul.card-list
+                    li
+                        a(href="#") User management (12)
+                    li
+                        a(href="#") Representative's Print Form settings (1)
+                    li
+                        a(href="#") Gmail add-on configuration (2)
+                    li
+                        a(href="#") Change Logo (1)
+                    li
+                        a(href="#") Email settings in SignifyCRM system (2)
+                    li
+                        a(href="#") Warehouse Creation (1)
 
 

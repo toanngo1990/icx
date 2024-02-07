@@ -25,6 +25,11 @@ img {
     max-width: 100%;
 }
 
+input,
+button {
+    outline: none;
+}
+
 textarea {
     resize: none;
 }
@@ -48,6 +53,7 @@ textarea {
 
     > div {
         display: grid;
+        gap: 20px;
 
         @include media-breakpoint-up(lg) {
             grid-template-columns: 1fr 240px;

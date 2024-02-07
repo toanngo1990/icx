@@ -17,7 +17,15 @@
 }
 
 .offcanvas {
-    max-width: 80%;
+    @include media-breakpoint-up(lg) {
+        position: static !important;
+        transform: none !important;
+        visibility: visible !important;
+    }
+
+    @include media-breakpoint-down(lg) {
+        max-width: 80%;
+    }
 }
 
 .offcanvas-body {
