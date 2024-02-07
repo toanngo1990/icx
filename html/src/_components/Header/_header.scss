@@ -20,6 +20,10 @@
     max-width: 80%;
 }
 
+.offcanvas-body {
+    padding: 0;
+}
+
 .menu {
     appearance: none;
     background-color: transparent;
@@ -27,9 +31,13 @@
     border-radius: 0;
     padding: 0;
 
+    @include media-breakpoint-up(lg) {
+        display: none;
+    }
+
     svg {
         display: block;
-        font-size: 20px;
+        font-size: 30px;
         color: var(--gray);
     }
 }
@@ -64,7 +72,6 @@
     .dropdown-toggle {
         display: flex;
         align-items: center;
-        gap: 10px;
         appearance: none;
         background-color: transparent;
         border: none;
@@ -73,6 +80,12 @@
         outline: none;
         font-size: 1rem;
         font-weight: 500;
+
+        > span + span {
+            @include media-breakpoint-up(lg) {
+                margin-left: 10px;
+            }
+        }
 
         img {
             width: 2rem;
@@ -104,13 +117,20 @@
 .navibar {
     padding: 20px 0;
     border-bottom: thin solid rgba(var(--black-rgb), $alpha: .14);
+
+    @include media-breakpoint-down(sm) {
+        overflow-x: auto;
+    }
 }
 
 .navibar-nav {
     @include reset-list;
     display: flex;
-    flex-wrap: wrap;
     gap: 10px;
+
+    @include media-breakpoint-up(sm) {
+        flex-wrap: wrap;
+    }
 
     li {
         a {
@@ -124,6 +144,7 @@
             line-height: 1;
             color: var(--gray);
             transition: $btn-transition;
+            white-space: nowrap;
 
             &.is-active {
                 background-color: rgba(var(--primary-rgb), .1);

@@ -48,9 +48,9 @@ textarea {
 
     > div {
         display: grid;
-        grid-template-columns: 1fr 240px;
 
         @include media-breakpoint-up(lg) {
+            grid-template-columns: 1fr 240px;
             padding-right: 0;
         }
     }
