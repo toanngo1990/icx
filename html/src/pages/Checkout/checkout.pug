@@ -2,22 +2,32 @@ extends ../../_layouts/default
 
 block container
     .heading.mb-10 Checkout
-    .row.mb-20
-        .col-lg-6
-            .form-grid
-                label.form-label Order No:
-                .col-form-label.text-secondary Auto
-                label.form-label Account Name
-                .col-form-label.text-secondary Muller machnics
-                +input("Contact:")
-                label.form-label Order Date
-                .col-form-label.text-secondary 12-Feb-2017
-        .col-lg-6
-            .form-grid
-                label.form-label Order Status:
-                .col-form-label.text-secondary New
-                +input("Billing Address:")
-                +input("Shipping Address:")
+    .row.mb-20.gy-5
+        .col-xl-6
+            .row
+                label.form-label.col-sm-4.col-form-label Order No:
+                .col-sm-8.col-form-label.text-secondary Auto
+        .col-xl-6
+            .row
+                label.form-label.col-sm-4.col-form-label Order Status:
+                .col-sm-8.col-form-label.text-secondary New
+        .col-xl-6
+            .row
+                label.form-label.col-sm-4.col-form-label Account Name
+                .col-sm-8.col-form-label.text-secondary Muller machnics
+        .col-xl-6
+            .row
+                +input-grid("Billing Address:")
+        .col-xl-6
+            .row
+                +input-grid("Contact:")
+        .col-xl-6
+            .row
+                +input-grid("Shipping Address:")
+        .col-xl-6
+            .row
+                label.form-label.col-sm-4.col-form-label Order Date
+                .col-sm-8.col-form-label.text-secondary 12-Feb-2017
     include ../../_components/ProductOrder/product-order
     .my-20
         button.btn.btn-primary(type="button") Add More Product
@@ -42,16 +52,22 @@ block container
     .mb-20
         +textarea("Order Note:")(rows="5")
     .heading.mb-10 Credit Card Information
-    .row.g-20.mb-20
-        .col-auto
-            .row.g-5
-                +input-inline("Card No.")
-        .col-auto
-            .row.g-5
-                +input-inline("Expiration Date")
-        .col-auto
-            .row.g-5
-                +input-inline("CCV")
+    .row.gx-20.gy-8.mb-20
+        .col-sm-4.col-xl-6.col-xxl-4
+            .row
+                label.form-label.col-lg-auto.col-form-label Card No.
+                .col-lg
+                    input.form-control(type="text")
+        .col-sm-4.col-xl-auto
+            .row
+                label.form-label.col-lg-auto.col-form-label Expiration Date
+                .col-lg-auto
+                    input.form-control.size-small(type="text")
+        .col-sm-4.col-xl-auto
+            .row
+                label.form-label.col-lg-auto.col-form-label CCV
+                .col-lg-auto
+                    input.form-control.size-small(type="text")
     .payments.mb-20
         img(src="images/visa.svg", alt="")
         img(src="images/mastercard.svg", alt="")

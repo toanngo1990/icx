@@ -3,7 +3,7 @@ mixin icon(name)
         use(xlink:href="#icon-"+name)
 
 mixin input(label, required, text)
-    - var handle= label ? `${formName}-${label.toLowerCase().replace(/ /g,'-')}` : undefined
+    - var handle= label ? `${label.toLowerCase().replace(/ /g,'-')}` : undefined
 
     label.form-label(for=handle)
         = label
@@ -14,7 +14,7 @@ mixin input(label, required, text)
         .form-text= text
 
 mixin input-inline(label, required, text)
-    - var handle= label ? `${formName}-${label.toLowerCase().replace(/ /g,'-')}` : undefined
+    - var handle= label ? `${label.toLowerCase().replace(/ /g,'-')}` : undefined
 
     .col-auto
         label.form-label.col-form-label(for=handle)
@@ -27,8 +27,21 @@ mixin input-inline(label, required, text)
         .col-auto
             .form-text= text
 
+mixin input-grid(label, required, text)
+    - var handle= label ? `${label.toLowerCase().replace(/ /g,'-')}` : undefined
+    .col-sm-4
+        label.form-label.col-form-label(for=handle)
+            = label
+            if required
+                span *
+    .col-sm-8
+        input.form-control(id=handle type="text")&attributes(attributes)
+    if text
+        .col-auto
+            .form-text= text
+
 mixin textarea(label, required)
-    - var handle= label ? `${formName}-${label.toLowerCase().replace(/ /g,'-')}` : undefined
+    - var handle= label ? `${label.toLowerCase().replace(/ /g,'-')}` : undefined
 
     label.form-label(for=handle)
         = label

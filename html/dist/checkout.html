@@ -59,30 +59,62 @@
                 <div class="container-fluid">
                     <div class="main__body">
                         <div class="heading mb-10">Checkout</div>
-                        <div class="row mb-20">
-                            <div class="col-lg-6">
-                                <div class="form-grid">
-                                    <label class="form-label">Order No:</label>
-                                    <div class="col-form-label text-secondary">Auto</div>
-                                    <label class="form-label">Account Name</label>
-                                    <div class="col-form-label text-secondary">Muller machnics</div>
-                                    <label class="form-label" for="undefined-contact:">Contact:
-                                    </label>
-                                    <input class="form-control" id="undefined-contact:" type="text"/>
-                                    <label class="form-label">Order Date</label>
-                                    <div class="col-form-label text-secondary">12-Feb-2017</div>
+                        <div class="row mb-20 gy-5">
+                            <div class="col-xl-6">
+                                <div class="row">
+                                    <label class="form-label col-sm-4 col-form-label">Order No:</label>
+                                    <div class="col-sm-8 col-form-label text-secondary">Auto</div>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
-                                <div class="form-grid">
-                                    <label class="form-label">Order Status:</label>
-                                    <div class="col-form-label text-secondary">New</div>
-                                    <label class="form-label" for="undefined-billing-address:">Billing Address:
-                                    </label>
-                                    <input class="form-control" id="undefined-billing-address:" type="text"/>
-                                    <label class="form-label" for="undefined-shipping-address:">Shipping Address:
-                                    </label>
-                                    <input class="form-control" id="undefined-shipping-address:" type="text"/>
+                            <div class="col-xl-6">
+                                <div class="row">
+                                    <label class="form-label col-sm-4 col-form-label">Order Status:</label>
+                                    <div class="col-sm-8 col-form-label text-secondary">New</div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="row">
+                                    <label class="form-label col-sm-4 col-form-label">Account Name</label>
+                                    <div class="col-sm-8 col-form-label text-secondary">Muller machnics</div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <label class="form-label col-form-label" for="billing-address:">Billing Address:
+                                        </label>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <input class="form-control" id="billing-address:" type="text"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <label class="form-label col-form-label" for="contact:">Contact:
+                                        </label>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <input class="form-control" id="contact:" type="text"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <label class="form-label col-form-label" for="shipping-address:">Shipping Address:
+                                        </label>
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <input class="form-control" id="shipping-address:" type="text"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-xl-6">
+                                <div class="row">
+                                    <label class="form-label col-sm-4 col-form-label">Order Date</label>
+                                    <div class="col-sm-8 col-form-label text-secondary">12-Feb-2017</div>
                                 </div>
                             </div>
                         </div>
@@ -153,42 +185,33 @@
                             </table>
                         </div>
                         <div class="mb-20">
-                            <label class="form-label" for="undefined-order-note:">Order Note:
+                            <label class="form-label" for="order-note:">Order Note:
                             </label>
-                            <textarea class="form-control" id="undefined-order-note:" rows="5"></textarea>
+                            <textarea class="form-control" id="order-note:" rows="5"></textarea>
                         </div>
                         <div class="heading mb-10">Credit Card Information</div>
-                        <div class="row g-20 mb-20">
-                            <div class="col-auto">
-                                <div class="row g-5">
-                                    <div class="col-auto">
-                                        <label class="form-label col-form-label" for="undefined-card-no.">Card No.
-                                        </label>
-                                    </div>
-                                    <div class="col-auto">
-                                        <input class="form-control" id="undefined-card-no." type="text"/>
+                        <div class="row gx-20 gy-8 mb-20">
+                            <div class="col-sm-4 col-xl-6 col-xxl-4">
+                                <div class="row">
+                                    <label class="form-label col-lg-auto col-form-label">Card No.</label>
+                                    <div class="col-lg">
+                                        <input class="form-control" type="text">
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-auto">
-                                <div class="row g-5">
-                                    <div class="col-auto">
-                                        <label class="form-label col-form-label" for="undefined-expiration-date">Expiration Date
-                                        </label>
-                                    </div>
-                                    <div class="col-auto">
-                                        <input class="form-control" id="undefined-expiration-date" type="text"/>
+                            <div class="col-sm-4 col-xl-auto">
+                                <div class="row">
+                                    <label class="form-label col-lg-auto col-form-label">Expiration Date</label>
+                                    <div class="col-lg-auto">
+                                        <input class="form-control size-small" type="text">
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-auto">
-                                <div class="row g-5">
-                                    <div class="col-auto">
-                                        <label class="form-label col-form-label" for="undefined-ccv">CCV
-                                        </label>
-                                    </div>
-                                    <div class="col-auto">
-                                        <input class="form-control" id="undefined-ccv" type="text"/>
+                            <div class="col-sm-4 col-xl-auto">
+                                <div class="row">
+                                    <label class="form-label col-lg-auto col-form-label">CCV</label>
+                                    <div class="col-lg-auto">
+                                        <input class="form-control size-small" type="text">
                                     </div>
                                 </div>
                             </div>

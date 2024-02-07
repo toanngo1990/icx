@@ -23,3 +23,11 @@
         color: var(--danger);
     }
 }
+
+.form-control {
+    &.size-small {
+        @include media-breakpoint-up(lg) {
+            width: 75px;
+        }
+    }
+}

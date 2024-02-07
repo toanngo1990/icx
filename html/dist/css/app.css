@@ -25394,6 +25394,12 @@ textarea {
   color: var(--danger);
 }
 
+@media (min-width: 992px) {
+  .form-control.size-small {
+    width: 75px;
+  }
+}
+
 svg[role="img"] {
   display: inline-block;
   width: 1em;
