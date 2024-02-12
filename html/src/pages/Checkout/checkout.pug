@@ -2,7 +2,7 @@ extends ../../_layouts/default
 
 block container
     .heading.mb-10 Checkout
-    .row.mb-20.gy-5
+    .row.mb-20.gy-5.gx-20
         .col-xl-6
             .row
                 label.form-label.col-sm-4.col-form-label Order No:
@@ -35,17 +35,14 @@ block container
         table.summary
             tbody
                 tr
-                    td Currency:
-                    td Thai Baht
-                    td Sub total:
+                    td Currency: Thai Baht
+                    td.fw-medium.text-nowrap Sub total:
                     td 75,000.00
                 tr
                     td
-                    td
-                    td Tax (7%)
+                    td.fw-medium.text-nowrap Tax (7%)
                     td 5,250.00
                 tr.fw-bold
-                    td
                     td
                     td Total
                     td 80,450.00

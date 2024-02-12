@@ -199,8 +199,13 @@
 
     th,
     td {
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 15px;
+        padding-right: 15px;
+
+        @include media-breakpoint-up(lg) {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
 
         &:first-child {
             border-radius: 4px 0 0 4px;
@@ -363,5 +368,34 @@
 
     img {
         height: 48px;
+    }
+}
+
+.summary {
+    width: 100%;
+
+    th, td {
+        background-color: var(--white);
+        border-bottom: thin solid var(--border);
+        padding: 15px;
+
+        @include media-breakpoint-up(lg) {
+            padding: 15px 20px;
+        }
+
+        &:first-child {
+            @include media-breakpoint-up(xl) {
+               width: 50%;
+               text-align: right;
+            }
+        }
+    }
+
+    tr {
+        &:last-child {
+            th, td {
+                border-bottom: none;
+            }
+        }
     }
 }

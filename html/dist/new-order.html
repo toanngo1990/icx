@@ -77,29 +77,39 @@
                                 <div class="text-secondary">THB10,000 for Each Class</div>
                             </div>
                         </div>
-                        <div class="row mb-20">
+                        <div class="row mb-20 gy-5 gx-20">
                             <div class="col-lg-6">
-                                <div class="form-grid">
-                                    <label class="form-label" for="enter-product-item">Enter Product Item
+                                <div class="row gx-2">
+                                    <label class="form-label col-sm-4 col-form-label" for="enter-product-item">Enter Product Item
                                     </label>
-                                    <input class="form-control" id="enter-product-item" type="text"/>
-                                    <label class="form-label">Choose from Category</label>
-                                    <select class="form-select">
-                                        <option>Option</option>
-                                        <option>Option</option>
-                                        <option>Option</option>
-                                    </select>
+                                    <div class="col-sm-8">
+                                        <input class="form-control" id="enter-product-item" type="text"/>
+                                    </div>
                                 </div>
                             </div>
                             <div class="col-lg-6">
-                                <div class="form-grid">
-                                    <label class="form-label" for="enter-product-name">Enter Product Name
+                                <div class="row gx-2">
+                                    <label class="form-label col-sm-4 col-form-label" for="enter-product-name">Enter Product Name
                                     </label>
-                                    <input class="form-control" id="enter-product-name" type="text"/>
+                                    <div class="col-sm-8">
+                                        <input class="form-control" id="enter-product-name" type="text"/>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="row gx-2">
+                                    <label class="form-label col-sm-4 col-form-label">Choose from Category</label>
+                                    <div class="col-sm-8">
+                                        <select class="form-select">
+                                            <option>Option</option>
+                                            <option>Option</option>
+                                            <option>Option</option>
+                                        </select>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="hstack gap-6">
+                        <div class="hstack gap-6 mb-20">
                             <button class="btn btn-primary btn-min" type="button">Search</button>
                             <button class="btn btn-outline-primary btn-min" type="button">Clear</button>
                         </div>
@@ -134,56 +144,54 @@
                                 </button>
                             </div>
                         </div>
-                        <table class="table">
-                            <thead>
-                                <tr>
-                                    <th>Product Item</th>
-                                    <th>Product Name</th>
-                                    <th>Unit</th>
-                                    <th>Quantity</th>
-                                    <th>Extended Price</th>
-                                    <th>Amount</th>
-                                    <th></th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>VX90209</td>
-                                    <td>
-                                        <p>Valve 12 Inch, Cast Steel</p>
-                                        <p>Tyco Valve 12 Inch Diameter Made from Cast Steel</p>
-                                    </td>
-                                    <td>Each</td>
-                                    <td>
-                                        <div class="quantity">
-                                            <input type="text" value="1">
-                                            <button>
-                                                <div class="icon icon-plus"></div>
-                                            </button>
-                                            <button>
-                                                <div class="icon icon-minus"></div>
-                                            </button>
-                                        </div>
-                                    </td>
-                                    <td>25,000.00</td>
-                                    <td>25,000.00</td>
-                                    <td>
-                                        <button class="btn btn-primary btn-sm" type="button">Remove</button>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                        <div class="row justify-content-end">
-                            <div class="col-lg-4">
-                                <div class="hstack gap-20 align-items-end">
-                                    <div>
-                                        <p>Items in Cart (2)</p>
-                                        <p>Amount in Cart (75,000.00)</p>
-                                    </div>
-                                    <div>
-                                        <button class="btn btn-primary" type="button">Next</button>
-                                    </div>
-                                </div>
+                        <div class="table-wrap">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th>Product Item</th>
+                                        <th>Product Name</th>
+                                        <th>Unit</th>
+                                        <th>Quantity</th>
+                                        <th>Extended Price</th>
+                                        <th>Amount</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>VX90209</td>
+                                        <td>
+                                            <p>Valve 12 Inch, Cast Steel</p>
+                                            <p>Tyco Valve 12 Inch Diameter Made from Cast Steel</p>
+                                        </td>
+                                        <td>Each</td>
+                                        <td>
+                                            <div class="quantity">
+                                                <input type="text" value="1">
+                                                <button>
+                                                    <div class="icon icon-plus"></div>
+                                                </button>
+                                                <button>
+                                                    <div class="icon icon-minus"></div>
+                                                </button>
+                                            </div>
+                                        </td>
+                                        <td>25,000.00</td>
+                                        <td>25,000.00</td>
+                                        <td>
+                                            <button class="btn btn-primary btn-sm" type="button">Remove</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="hstack gap-20 justify-content-end align-items-end mt-20">
+                            <div>
+                                <div class="mb-2">Items in Cart (2)</div>
+                                <div>Amount in Cart (75,000.00)</div>
+                            </div>
+                            <div>
+                                <button class="btn btn-primary btn-min" type="button">Next</button>
                             </div>
                         </div>
                     </div>

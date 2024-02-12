@@ -29,11 +29,10 @@ mixin input-inline(label, required, text)
 
 mixin input-grid(label, required, text)
     - var handle= label ? `${label.toLowerCase().replace(/ /g,'-')}` : undefined
-    .col-sm-4
-        label.form-label.col-form-label(for=handle)
-            = label
-            if required
-                span *
+    label.form-label.col-sm-4.col-form-label(for=handle)
+        = label
+        if required
+            span *
     .col-sm-8
         input.form-control(id=handle type="text")&attributes(attributes)
     if text

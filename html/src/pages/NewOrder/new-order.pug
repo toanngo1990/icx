@@ -14,19 +14,22 @@ block container
             .card
                 .mb-5= val[0]
                 .text-secondary= val[1]
-    .row.mb-20
+    .row.mb-20.gy-5.gx-20
         .col-lg-6
-            .form-grid
-                +input("Enter Product Item")
-                label.form-label Choose from Category
-                select.form-select
-                    option Option
-                    option Option
-                    option Option
+            .row.gx-2
+                +input-grid("Enter Product Item")
         .col-lg-6
-            .form-grid
-                +input("Enter Product Name")
-    .hstack.gap-6
+            .row.gx-2
+                +input-grid("Enter Product Name")
+        .col-lg-6
+            .row.gx-2
+                label.form-label.col-sm-4.col-form-label Choose from Category
+                .col-sm-8
+                    select.form-select
+                        option Option
+                        option Option
+                        option Option
+    .hstack.gap-6.mb-20
         button.btn.btn-primary.btn-min(type="button") Search
         button.btn.btn-outline-primary.btn-min(type="button") Clear
     .hstack.align-items-center.justify-content-between.mb-10
@@ -44,11 +47,9 @@ block container
                 +icon("next")
                 +icon("next")
     include ../../_components/ProductOrder/product-order
-    .row.justify-content-end
-        .col-lg-4
-            .hstack.gap-20.align-items-end
-                div
-                    p Items in Cart (2)
-                    p Amount in Cart (75,000.00)
-                div
-                    button.btn.btn-primary(type="button") Next
+    .hstack.gap-20.justify-content-end.align-items-end.mt-20
+        div
+            .mb-2 Items in Cart (2)
+            div Amount in Cart (75,000.00)
+        div
+            button.btn.btn-primary.btn-min(type="button") Next

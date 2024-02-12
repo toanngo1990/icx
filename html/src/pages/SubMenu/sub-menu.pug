@@ -11,7 +11,7 @@ block container
                 tr
                     th Article Name
                     th Article Name
-                    th Article Name
+                    th.text-nowrap Article Name
             tbody
                 tr
                     td
@@ -29,11 +29,11 @@ block container
                 each val in [1, 2, 3, 4]
                     tr
                         td
-                            .article
+                            a.article(href="#")
                                 .article__header
-                                    a.img-drop.article__image(href="#")
+                                    .img-drop.article__image
                                         img(src="images/article-default.png", alt="")
-                                a.article__body(href="#")
+                                .article__body
                                     .article__title First time user settings
                                     .article__description First time user settings
                                 .article__footer

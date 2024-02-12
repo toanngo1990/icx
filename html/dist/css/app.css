@@ -25386,7 +25386,7 @@ textarea {
 
 @media (min-width: 992px) {
   .form-wrap {
-    padding: 20px 40px;
+    padding: 20px;
   }
 }
 
@@ -26051,8 +26051,16 @@ svg[role="img"] {
 
 .table th,
 .table td {
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media (min-width: 992px) {
+  .table th,
+  .table td {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
 }
 
 .table th:first-child,
@@ -26244,6 +26252,33 @@ svg[role="img"] {
 
 .payments img {
   height: 48px;
+}
+
+.summary {
+  width: 100%;
+}
+
+.summary th, .summary td {
+  background-color: var(--white);
+  border-bottom: thin solid var(--border);
+  padding: 15px;
+}
+
+@media (min-width: 992px) {
+  .summary th, .summary td {
+    padding: 15px 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .summary th:first-child, .summary td:first-child {
+    width: 50%;
+    text-align: right;
+  }
+}
+
+.summary tr:last-child th, .summary tr:last-child td {
+  border-bottom: none;
 }
 
 /*# sourceMappingURL=app.css.map */
