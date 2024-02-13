@@ -2,82 +2,84 @@ extends ../../_layouts/default
 
 block container
     .order-heading Order: SO-23-04-000829
-    table.order-info
-        tbody
-            tr
-                th Account Name:
-                td Casa Rocca Co., Ltd.
-                th Status:
-                td Committed
-            tr
-                th Contact:
-                td xyz
-                th Billing Address:
-                td Head Office
-            tr
-                th Order Date:
-                td 2023-04-10
-                th Shipping Address:
-                td Head Office
-            tr
-                th Note:
-                td -
-                th Expected Delivery Date:
-                td -
-    table.order-detail
-        thead
-            tr
-                th Product Item
-                th Product Name
-                th Unit
-                th Price
-                th Quantity
-                th Amount
-        tbody
-            tr
-                td ICXT Lite
-                td
-                    | xyz
-                    br
-                    | 2  users 5 months Apr. 2023 - Sep. 2023
-                td
-                    | Per User
-                    br
-                    | Per Month
-                td 4,000.00
-                td 2
-                td 6,000.00
-            tr
-                td Signify CRM Lite Version Subscription Key
-                td
-                    | xyz
-                    br
-                    | 2  users 5 months Apr. 2023 - Sep. 2023
-                td
-                    | Per User
-                    br
-                    | Per Month
-                td 4,000.00
-                td 2
-                td 6,000.00
-            tr
-                td
-                td Currency:
-                td THB
-                td Subtotal:
-                td
-                td 6,000.00
-            tr
-                td
-                td
-                td
-                td Tax (7%)
-                td
-                td 420.00
-            tr
-                td
-                td
-                td
-                td Total
-                td
-                td 6,420.00
+    .order-info-wrap.mb-20
+        table.order-info
+            tbody
+                tr
+                    th Account Name:
+                    td Casa Rocca Co., Ltd.
+                    th Status:
+                    td Committed
+                tr
+                    th Contact:
+                    td xyz
+                    th Billing Address:
+                    td Head Office
+                tr
+                    th Order Date:
+                    td.text-nowrap 2023-04-10
+                    th Shipping Address:
+                    td Head Office
+                tr
+                    th Note:
+                    td -
+                    th Expected Delivery Date:
+                    td -
+    .table-wrap
+        table.order-detail
+            thead
+                tr
+                    th Product Item
+                    th Product Name
+                    th(style="width:120px") Unit
+                    th Price
+                    th Quantity
+                    th Amount
+            tbody
+                tr
+                    td ICXT Lite
+                    td
+                        | xyz
+                        br
+                        | 2  users 5 months Apr. 2023 - Sep. 2023
+                    td
+                        | Per User
+                        br
+                        | Per Month
+                    td 4,000.00
+                    td 2
+                    td 6,000.00
+                tr
+                    td Signify CRM Lite Version Subscription Key
+                    td
+                        | xyz
+                        br
+                        | 2  users 5 months Apr. 2023 - Sep. 2023
+                    td
+                        | Per User
+                        br
+                        | Per Month
+                    td 4,000.00
+                    td 2
+                    td 6,000.00
+                tr
+                    td
+                    td Currency:
+                    td THB
+                    th Subtotal:
+                    td
+                    td 6,000.00
+                tr
+                    td
+                    td
+                    td
+                    th Tax (7%)
+                    td
+                    td 420.00
+                tr
+                    td
+                    td
+                    td
+                    th.fw-bold Total
+                    td
+                    td.fw-bold 6,420.00

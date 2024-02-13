@@ -1,0 +1,111 @@
+.order-heading {
+    padding: 10px 15px;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 4px;
+    background-color: var(--border);
+    margin-bottom: 10px;
+
+    @include media-breakpoint-up(lg) {
+        padding: 10px 20px;
+    }
+}
+
+.order-info-wrap {
+    background-color: var(--white);
+    border: thin solid var(--border);
+    border-radius: 4px;
+    overflow-y: hidden;
+    overflow-x: auto;
+    box-shadow: 0 2px 2px rgba(var(--black-rgb), .12);
+}
+
+.order-info {
+    width: 100%;
+
+    th,
+    td {
+        border-bottom: thin solid var(--light);
+        padding: 15px;
+        vertical-align: top;
+
+        @include media-breakpoint-up(lg) {
+            padding: 15px 20px;
+        }
+    }
+
+    th {
+        font-weight: 500;
+        white-space: nowrap;
+    }
+
+    td {
+        font-size: 15px;
+    }
+
+    tr {
+        &:last-child {
+            th, td {
+                border-bottom: none;
+            }
+        }
+    }
+}
+
+.order-detail {
+    th, td {
+        padding-left: 15px;
+        padding-right: 15px;
+
+        @include media-breakpoint-up(lg) {
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    }
+
+    th {
+        font-weight: 500;
+        white-space: nowrap;
+    }
+
+    td {
+        font-size: 15px;
+    }
+
+    thead {
+        th,
+        td {
+            padding-top: 5px;
+            padding-bottom: 5px;
+            background-color: var(--border);
+            color: var(--gray-700);
+
+            &:first-child {
+                border-radius: 4px 0 0 4px;
+            }
+
+            &:last-child {
+                border-radius: 0 4px 4px 0;
+            }
+        }
+    }
+
+    tbody {
+        th,
+        td {
+            padding-top: 15px;
+            padding-bottom: 15px;
+            background-color: var(--white);
+            border-bottom: thin solid var(--border);
+        }
+
+        tr {
+            &:last-child {
+                th,
+                td {
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+}
