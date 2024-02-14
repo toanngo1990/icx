@@ -201,6 +201,7 @@
     td {
         padding-left: 15px;
         padding-right: 15px;
+        vertical-align: top;
 
         @include media-breakpoint-up(lg) {
             padding-left: 20px;

@@ -26221,6 +26221,7 @@ svg[role="img"] {
 .table td {
   padding-left: 15px;
   padding-right: 15px;
+  vertical-align: top;
 }
 
 @media (min-width: 992px) {
