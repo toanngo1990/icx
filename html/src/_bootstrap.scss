@@ -46,6 +46,7 @@ $btn-font-size: 14px;
 $btn-line-height: (20/14);
 $btn-font-weight: 500;
 $btn-padding-x-sm: 8px;
+$btn-font-size-sm: 14px;
 
 $dropdown-border-radius: 0;
 $dropdown-font-size: 12px;
@@ -63,13 +64,24 @@ $badge-padding-y: 5px;
 $badge-padding-x: 10px;
 $badge-border-radius: 4px;
 
+$nav-link-padding-y: (6/16) * 1rem;
+$nav-link-padding-x: (12/16) * 1rem;
+$nav-link-color: $gray-600;
+$nav-link-font-weight: 500;
+$nav-tabs-border-radius: 4px;
+$nav-tabs-link-active-color: $primary;
+$nav-tabs-link-active-bg: rgba(var(--primary-rgb), .2);
+$nav-tabs-link-active-border-color: transparent;
+
 // Required Bootstrap imports
 @import "bootstrap/scss/variables";
 @import "bootstrap/scss/variables-dark";
 
 // Map overrides here
 $custom-colors: (
-    "border": $gray-300
+    "border": $gray-300,
+    "warm": $orange,
+    "Light": $gray-200
 );
 
 $spacers: (

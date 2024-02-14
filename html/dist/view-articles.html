@@ -58,14 +58,14 @@
             <div class="main">
                 <div class="container-fluid">
                     <div class="main__body">
-                        <div class="heading">How to check no. of users.</div>
-                        <div class="description">Last Updated 23/09/2023 14:56 PM</div>
+                        <div class="heading mb-2">How to check no. of users.</div>
+                        <div class="description mb-10">Last Updated 23/09/2023 14:56 PM</div>
                         <div class="block">
                             <div class="row">
-                                <div class="col-lg-2">
+                                <div class="col-lg-1">
                                     <div class="block__heading">Step 1</div>
                                 </div>
-                                <div class="col-lg">
+                                <div class="col-lg-11">
                                     <div class="block__title">Admin</div>
                                     <div class="step-1">
                                         <div class="step-1__header">
@@ -78,15 +78,16 @@
                                                         <svg role="img">
                                                             <use xlink:href="#icon-logout"></use>
                                                         </svg><span>Logout</span></a></li>
-                                                <li><a class="dropdown" href="#">
-                                                        <svg class="dropdown-toggle" role="img" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <li href="#"><a class="text-primary" href="#">
+                                                        <svg role="img">
                                                             <use xlink:href="#icon-settings"></use>
-                                                        </svg>
-                                                        <ul class="dropdown-menu">
-                                                            <li><a class="dropdown-item" href="#">My Account</a></li>
-                                                            <li><a class="dropdown-item" href="#">Admin</a></li>
-                                                            <li><a class="dropdown-item" href="#">Page Style</a></li>
-                                                        </ul></a></li>
+                                                        </svg></a>
+                                                    <ul class="menu-dropdown">
+                                                        <li><a href="#">My Account</a></li>
+                                                        <li><a class="is-active" href="#">Admin</a></li>
+                                                        <li><a href="#">Page Style</a></li>
+                                                    </ul>
+                                                </li>
                                             </ul>
                                         </div>
                                     </div>
@@ -95,110 +96,127 @@
                         </div>
                         <div class="block">
                             <div class="row">
-                                <div class="col-lg-2">
+                                <div class="col-lg-1">
                                     <div class="block__heading">Step 2</div>
                                 </div>
-                                <div class="col-lg">
+                                <div class="col-lg-11">
                                     <div class="block__title">User Management</div>
-                                    <div class="step-2">
-                                        <div class="step-2__header">
-                                            <div class="step-2__title">User Security</div>
-                                            <div class="step-2__description">Create, edit, activate and deactivate User. Manage Role and Group Secutity.</div>
+                                    <div class="step-2-wrap">
+                                        <div class="step-2">
+                                            <div class="step-2__header">
+                                                <div class="mb-2">User Security</div>
+                                                <div class="small">Create, edit, activate and deactivate User. Manage Role and Group Secutity.</div>
+                                            </div>
+                                            <div class="is-active">
+                                                <div class="hstack gap-4 align-items-center">
+                                                    <svg role="img">
+                                                        <use xlink:href="#icon-user"></use>
+                                                    </svg><span class="fw-medium">User Management</span>
+                                                </div>
+                                            </div>
+                                            <div class="small">Manage user accounts and paswords</div>
+                                            <div>
+                                                <div class="hstack gap-4 align-items-center">
+                                                    <svg role="img">
+                                                        <use xlink:href="#icon-key"></use>
+                                                    </svg><span class="fw-medium">Password Management</span>
+                                                </div>
+                                            </div>
+                                            <div class="small">Manage password requirements and expiration</div>
+                                            <div>
+                                                <div class="hstack gap-4 align-items-center">
+                                                    <svg role="img">
+                                                        <use xlink:href="#icon-role"></use>
+                                                    </svg><span class="fw-medium">Role Management</span>
+                                                </div>
+                                            </div>
+                                            <div class="small">Manage role security, which modules and What action the role is authorized to perform.</div>
+                                            <div>
+                                                <div class="hstack gap-4 align-items-center">
+                                                    <svg role="img">
+                                                        <use xlink:href="#icon-group"></use>
+                                                    </svg><span class="fw-medium">Group Management</span>
+                                                </div>
+                                            </div>
+                                            <div class="small">Manage group security, which record data the group is authorized to access</div>
                                         </div>
-                                        <div class="is-active">
-                                            <div class="hstack g-4 align-items-center"><img src="images/user-management.svg" alt=""><span>User Management</span></div>
-                                        </div>
-                                        <div>Manage user accounts and paswords</div>
-                                        <div>
-                                            <div class="hstack g-4 align-items-center"><img src="images/password-management.svg" alt=""><span>Password Management</span></div>
-                                        </div>
-                                        <div>Manage password requirements and expiration</div>
-                                        <div>
-                                            <div class="hstack g-4 align-items-center"><img src="images/role-management.svg" alt=""><span>Role Management</span></div>
-                                        </div>
-                                        <div>Manage role security, which modules and What action the role is authorized to perform.</div>
-                                        <div>
-                                            <div class="hstack g-4 align-items-center"><img src="images/group-management.svg" alt=""><span>Group Management</span></div>
-                                        </div>
-                                        <div>Manage group security, which record data the group is authorized to access</div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="block">
                             <div class="row">
-                                <div class="col-lg-2">
+                                <div class="col-lg-1">
                                     <div class="block__heading">Step 3</div>
                                 </div>
-                                <div class="col-lg">
+                                <div class="col-lg-11">
                                     <div class="block__title">Status Active</div>
                                     <div class="step-3">
-                                        <div class="step-3__heading">Users: Home</div>
-                                        <ul class="nav nav-tabs">
+                                        <div class="mb-4">Users: Home</div>
+                                        <ul class="nav nav-tabs mb-20">
                                             <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Basic Search</a></li>
                                             <li class="nav-item"><a class="nav-link" href="#">Advanced Search</a></li>
                                         </ul>
-                                        <div class="row">
+                                        <div class="row mb-20">
                                             <div class="col-lg-3">
-                                                <div class="row">
+                                                <div class="row gx-5">
                                                     <div class="col-auto">
                                                         <label class="form-label col-form-label" for="first-name">First Name
                                                         </label>
                                                     </div>
-                                                    <div class="col-auto">
+                                                    <div class="col-lg">
                                                         <input class="form-control" id="first-name" type="text"/>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-lg-3">
-                                                <div class="row">
+                                                <div class="row gx-5">
                                                     <div class="col-auto">
                                                         <label class="form-label col-form-label" for="last-name">Last Name
                                                         </label>
                                                     </div>
-                                                    <div class="col-auto">
+                                                    <div class="col-lg">
                                                         <input class="form-control" id="last-name" type="text"/>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-lg-3">
-                                                <div class="row">
+                                                <div class="row gx-5">
                                                     <div class="col-auto">
                                                         <label class="form-label col-form-label" for="department">Department
                                                         </label>
                                                     </div>
-                                                    <div class="col-auto">
+                                                    <div class="col-lg">
                                                         <input class="form-control" id="department" type="text"/>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="col-lg-3">
-                                                <div class="row">
-                                                    <div class="col-auto">
-                                                        <label class="form-label">Status</label>
-                                                    </div>
-                                                    <div class="col-auto">
-                                                        <select class="form-select">
-                                                            <option>None</option>
-                                                            <option>Active</option>
-                                                            <option>Inactive</option>
-                                                        </select>
+                                                <div class="row gx-5">
+                                                    <label class="form-label col-auto col-form-label">Status</label>
+                                                    <div class="col-lg">
+                                                        <div class="select">
+                                                            <div class="select__header">None</div>
+                                                            <ul class="menu-dropdown">
+                                                                <li><a href="#">None</a></li>
+                                                                <li><a class="is-active" href="#">Active</a></li>
+                                                                <li><a href="#">Inactive</a></li>
+                                                            </ul>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row">
+                                        <div class="row mb-10 gy-5">
                                             <div class="col-auto">
-                                                <div class="hstack">
-                                                    <button class="btn btn-primary" type="button">Search</button>
-                                                    <button class="btn btn-outline-primary" type="button">Clear</button>
+                                                <div class="hstack gap-6">
+                                                    <button class="btn btn-primary btn-min" type="button">Search</button>
+                                                    <button class="btn btn-outline-primary btn-min" type="button">Clear</button>
                                                 </div>
                                             </div>
                                             <div class="col-auto">
                                                 <div class="row">
-                                                    <div class="col-auto">
-                                                        <label class="form-label">Saved Searches</label>
-                                                    </div>
+                                                    <label class="form-label col-auto col-form-label">Saved Searches</label>
                                                     <div class="col-auto">
                                                         <select class="form-select">
                                                             <option>None</option>
@@ -215,20 +233,20 @@
                         </div>
                         <div class="block">
                             <div class="row">
-                                <div class="col-lg-2">
+                                <div class="col-lg-1">
                                     <div class="block__heading">Step 4</div>
                                 </div>
-                                <div class="col-lg">
+                                <div class="col-lg-11">
                                     <div class="block__title">Active Export User .CSV</div>
                                     <div class="export-wrap">
-                                        <div class="row justify-content-between">
+                                        <div class="row gy-5 justify-content-between mb-5">
                                             <div class="col-auto">
-                                                <div class="hstack align-items-center">
+                                                <div class="hstack align-items-center gap-7">
                                                     <select>
                                                         <option>Select</option>
                                                         <option>Option</option>
                                                     </select>
-                                                    <button class="btn btn-gray btn-sm" type="button">Export</button><span>Selected: 0</span>
+                                                    <button class="btn btn-Light btn-sm" type="button">Export</button><span class="fw-medium small">Selected: 0</span>
                                                 </div>
                                             </div>
                                             <div class="col-auto">
@@ -262,331 +280,333 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <table class="export-table">
-                                            <thead>
-                                                <tr>
-                                                    <th>
-                                                        <input type="checkbox">
-                                                    </th>
-                                                    <th><span>Name</span></th>
-                                                    <th><span>User Name</span></th>
-                                                    <th><span>Title</span></th>
-                                                    <th><span>Department</span></th>
-                                                    <th>Email</th>
-                                                    <th><span>Phone</span></th>
-                                                    <th><span>Status</span></th>
-                                                    <th><span>System Administrator</span></th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>
-                                                        <div class="hstack">
+                                        <div class="table-wrap">
+                                            <table class="export-table">
+                                                <thead>
+                                                    <tr>
+                                                        <th>
                                                             <input type="checkbox">
-                                                            <button class="btn-icon" type="button">
-                                                                <svg role="img">
-                                                                    <use xlink:href="#icon-star"></use>
-                                                                </svg>
-                                                            </button>
-                                                            <button class="btn-icon" type="button">
-                                                                <svg role="img">
-                                                                    <use xlink:href="#icon-edit"></use>
-                                                                </svg>
-                                                            </button>
-                                                        </div>
-                                                    </td>
-                                                    <td>ABCDEFG</td>
-                                                    <td>ABCDEFG</td>
-                                                    <td>Support Analyst</td>
-                                                    <td>DEV</td>
-                                                    <td>icxdummy@gmail.com</td>
-                                                    <td>0123456789</td>
-                                                    <td>Active</td>
-                                                    <td>
-                                                        <div class="hstack">
-                                                            <input type="checkbox">
-                                                            <button class="btn-icon" type="button">
-                                                                <svg role="img">
-                                                                    <use xlink:href="#icon-edit"></use>
-                                                                </svg>
-                                                            </button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="hstack">
-                                                            <input type="checkbox">
-                                                            <button class="btn-icon" type="button">
-                                                                <svg role="img">
-                                                                    <use xlink:href="#icon-star"></use>
-                                                                </svg>
-                                                            </button>
-                                                            <button class="btn-icon" type="button">
-                                                                <svg role="img">
-                                                                    <use xlink:href="#icon-edit"></use>
-                                                                </svg>
-                                                            </button>
-                                                        </div>
-                                                    </td>
-                                                    <td>ABCDEFG</td>
-                                                    <td>ABCDEFG</td>
-                                                    <td>Support Analyst</td>
-                                                    <td>DEV</td>
-                                                    <td>icxdummy@gmail.com</td>
-                                                    <td>0123456789</td>
-                                                    <td>Active</td>
-                                                    <td>
-                                                        <div class="hstack">
-                                                            <input type="checkbox">
-                                                            <button class="btn-icon" type="button">
-                                                                <svg role="img">
-                                                                    <use xlink:href="#icon-edit"></use>
-                                                                </svg>
-                                                            </button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="hstack">
-                                                            <input type="checkbox">
-                                                            <button class="btn-icon" type="button">
-                                                                <svg role="img">
-                                                                    <use xlink:href="#icon-star"></use>
-                                                                </svg>
-                                                            </button>
-                                                            <button class="btn-icon" type="button">
-                                                                <svg role="img">
-                                                                    <use xlink:href="#icon-edit"></use>
-                                                                </svg>
-                                                            </button>
-                                                        </div>
-                                                    </td>
-                                                    <td>ABCDEFG</td>
-                                                    <td>ABCDEFG</td>
-                                                    <td>Support Analyst</td>
-                                                    <td>DEV</td>
-                                                    <td>icxdummy@gmail.com</td>
-                                                    <td>0123456789</td>
-                                                    <td>Active</td>
-                                                    <td>
-                                                        <div class="hstack">
-                                                            <input type="checkbox">
-                                                            <button class="btn-icon" type="button">
-                                                                <svg role="img">
-                                                                    <use xlink:href="#icon-edit"></use>
-                                                                </svg>
-                                                            </button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="hstack">
-                                                            <input type="checkbox">
-                                                            <button class="btn-icon" type="button">
-                                                                <svg role="img">
-                                                                    <use xlink:href="#icon-star"></use>
-                                                                </svg>
-                                                            </button>
-                                                            <button class="btn-icon" type="button">
-                                                                <svg role="img">
-                                                                    <use xlink:href="#icon-edit"></use>
-                                                                </svg>
-                                                            </button>
-                                                        </div>
-                                                    </td>
-                                                    <td>ABCDEFG</td>
-                                                    <td>ABCDEFG</td>
-                                                    <td>Support Analyst</td>
-                                                    <td>DEV</td>
-                                                    <td>icxdummy@gmail.com</td>
-                                                    <td>0123456789</td>
-                                                    <td>Active</td>
-                                                    <td>
-                                                        <div class="hstack">
-                                                            <input type="checkbox">
-                                                            <button class="btn-icon" type="button">
-                                                                <svg role="img">
-                                                                    <use xlink:href="#icon-edit"></use>
-                                                                </svg>
-                                                            </button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="hstack">
-                                                            <input type="checkbox">
-                                                            <button class="btn-icon" type="button">
-                                                                <svg role="img">
-                                                                    <use xlink:href="#icon-star"></use>
-                                                                </svg>
-                                                            </button>
-                                                            <button class="btn-icon" type="button">
-                                                                <svg role="img">
-                                                                    <use xlink:href="#icon-edit"></use>
-                                                                </svg>
-                                                            </button>
-                                                        </div>
-                                                    </td>
-                                                    <td>ABCDEFG</td>
-                                                    <td>ABCDEFG</td>
-                                                    <td>Support Analyst</td>
-                                                    <td>DEV</td>
-                                                    <td>icxdummy@gmail.com</td>
-                                                    <td>0123456789</td>
-                                                    <td>Active</td>
-                                                    <td>
-                                                        <div class="hstack">
-                                                            <input type="checkbox">
-                                                            <button class="btn-icon" type="button">
-                                                                <svg role="img">
-                                                                    <use xlink:href="#icon-edit"></use>
-                                                                </svg>
-                                                            </button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="hstack">
-                                                            <input type="checkbox">
-                                                            <button class="btn-icon" type="button">
-                                                                <svg role="img">
-                                                                    <use xlink:href="#icon-star"></use>
-                                                                </svg>
-                                                            </button>
-                                                            <button class="btn-icon" type="button">
-                                                                <svg role="img">
-                                                                    <use xlink:href="#icon-edit"></use>
-                                                                </svg>
-                                                            </button>
-                                                        </div>
-                                                    </td>
-                                                    <td>ABCDEFG</td>
-                                                    <td>ABCDEFG</td>
-                                                    <td>Support Analyst</td>
-                                                    <td>DEV</td>
-                                                    <td>icxdummy@gmail.com</td>
-                                                    <td>0123456789</td>
-                                                    <td>Active</td>
-                                                    <td>
-                                                        <div class="hstack">
-                                                            <input type="checkbox">
-                                                            <button class="btn-icon" type="button">
-                                                                <svg role="img">
-                                                                    <use xlink:href="#icon-edit"></use>
-                                                                </svg>
-                                                            </button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="hstack">
-                                                            <input type="checkbox">
-                                                            <button class="btn-icon" type="button">
-                                                                <svg role="img">
-                                                                    <use xlink:href="#icon-star"></use>
-                                                                </svg>
-                                                            </button>
-                                                            <button class="btn-icon" type="button">
-                                                                <svg role="img">
-                                                                    <use xlink:href="#icon-edit"></use>
-                                                                </svg>
-                                                            </button>
-                                                        </div>
-                                                    </td>
-                                                    <td>ABCDEFG</td>
-                                                    <td>ABCDEFG</td>
-                                                    <td>Support Analyst</td>
-                                                    <td>DEV</td>
-                                                    <td>icxdummy@gmail.com</td>
-                                                    <td>0123456789</td>
-                                                    <td>Active</td>
-                                                    <td>
-                                                        <div class="hstack">
-                                                            <input type="checkbox">
-                                                            <button class="btn-icon" type="button">
-                                                                <svg role="img">
-                                                                    <use xlink:href="#icon-edit"></use>
-                                                                </svg>
-                                                            </button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="hstack">
-                                                            <input type="checkbox">
-                                                            <button class="btn-icon" type="button">
-                                                                <svg role="img">
-                                                                    <use xlink:href="#icon-star"></use>
-                                                                </svg>
-                                                            </button>
-                                                            <button class="btn-icon" type="button">
-                                                                <svg role="img">
-                                                                    <use xlink:href="#icon-edit"></use>
-                                                                </svg>
-                                                            </button>
-                                                        </div>
-                                                    </td>
-                                                    <td>ABCDEFG</td>
-                                                    <td>ABCDEFG</td>
-                                                    <td>Support Analyst</td>
-                                                    <td>DEV</td>
-                                                    <td>icxdummy@gmail.com</td>
-                                                    <td>0123456789</td>
-                                                    <td>Active</td>
-                                                    <td>
-                                                        <div class="hstack">
-                                                            <input type="checkbox">
-                                                            <button class="btn-icon" type="button">
-                                                                <svg role="img">
-                                                                    <use xlink:href="#icon-edit"></use>
-                                                                </svg>
-                                                            </button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td>
-                                                        <div class="hstack">
-                                                            <input type="checkbox">
-                                                            <button class="btn-icon" type="button">
-                                                                <svg role="img">
-                                                                    <use xlink:href="#icon-star"></use>
-                                                                </svg>
-                                                            </button>
-                                                            <button class="btn-icon" type="button">
-                                                                <svg role="img">
-                                                                    <use xlink:href="#icon-edit"></use>
-                                                                </svg>
-                                                            </button>
-                                                        </div>
-                                                    </td>
-                                                    <td>ABCDEFG</td>
-                                                    <td>ABCDEFG</td>
-                                                    <td>Support Analyst</td>
-                                                    <td>DEV</td>
-                                                    <td>icxdummy@gmail.com</td>
-                                                    <td>0123456789</td>
-                                                    <td>Active</td>
-                                                    <td>
-                                                        <div class="hstack">
-                                                            <input type="checkbox">
-                                                            <button class="btn-icon" type="button">
-                                                                <svg role="img">
-                                                                    <use xlink:href="#icon-edit"></use>
-                                                                </svg>
-                                                            </button>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
+                                                        </th>
+                                                        <th><span>Name</span></th>
+                                                        <th><span>User Name</span></th>
+                                                        <th><span>Title</span></th>
+                                                        <th><span>Department</span></th>
+                                                        <th>Email</th>
+                                                        <th><span>Phone</span></th>
+                                                        <th><span>Status</span></th>
+                                                        <th><span>System Administrator</span></th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="hstack align-items-center gap-3">
+                                                                <input type="checkbox">
+                                                                <button class="btn-icon text-warm" type="button">
+                                                                    <svg role="img">
+                                                                        <use xlink:href="#icon-star"></use>
+                                                                    </svg>
+                                                                </button>
+                                                                <button class="btn-icon text-success" type="button">
+                                                                    <svg role="img">
+                                                                        <use xlink:href="#icon-edit"></use>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                        </td>
+                                                        <td>ABCDEFG</td>
+                                                        <td>ABCDEFG</td>
+                                                        <td>Support Analyst</td>
+                                                        <td>DEV</td>
+                                                        <td>icxdummy@gmail.com</td>
+                                                        <td>0123456789</td>
+                                                        <td>Active</td>
+                                                        <td>
+                                                            <div class="hstack align-items-center justify-content-between gap-3">
+                                                                <input type="checkbox">
+                                                                <button class="btn-icon text-success" type="button">
+                                                                    <svg role="img">
+                                                                        <use xlink:href="#icon-edit"></use>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="hstack align-items-center gap-3">
+                                                                <input type="checkbox">
+                                                                <button class="btn-icon text-warm" type="button">
+                                                                    <svg role="img">
+                                                                        <use xlink:href="#icon-star"></use>
+                                                                    </svg>
+                                                                </button>
+                                                                <button class="btn-icon text-success" type="button">
+                                                                    <svg role="img">
+                                                                        <use xlink:href="#icon-edit"></use>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                        </td>
+                                                        <td>ABCDEFG</td>
+                                                        <td>ABCDEFG</td>
+                                                        <td>Support Analyst</td>
+                                                        <td>DEV</td>
+                                                        <td>icxdummy@gmail.com</td>
+                                                        <td>0123456789</td>
+                                                        <td>Active</td>
+                                                        <td>
+                                                            <div class="hstack align-items-center justify-content-between gap-3">
+                                                                <input type="checkbox">
+                                                                <button class="btn-icon text-success" type="button">
+                                                                    <svg role="img">
+                                                                        <use xlink:href="#icon-edit"></use>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="hstack align-items-center gap-3">
+                                                                <input type="checkbox">
+                                                                <button class="btn-icon text-warm" type="button">
+                                                                    <svg role="img">
+                                                                        <use xlink:href="#icon-star"></use>
+                                                                    </svg>
+                                                                </button>
+                                                                <button class="btn-icon text-success" type="button">
+                                                                    <svg role="img">
+                                                                        <use xlink:href="#icon-edit"></use>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                        </td>
+                                                        <td>ABCDEFG</td>
+                                                        <td>ABCDEFG</td>
+                                                        <td>Support Analyst</td>
+                                                        <td>DEV</td>
+                                                        <td>icxdummy@gmail.com</td>
+                                                        <td>0123456789</td>
+                                                        <td>Active</td>
+                                                        <td>
+                                                            <div class="hstack align-items-center justify-content-between gap-3">
+                                                                <input type="checkbox">
+                                                                <button class="btn-icon text-success" type="button">
+                                                                    <svg role="img">
+                                                                        <use xlink:href="#icon-edit"></use>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="hstack align-items-center gap-3">
+                                                                <input type="checkbox">
+                                                                <button class="btn-icon text-warm" type="button">
+                                                                    <svg role="img">
+                                                                        <use xlink:href="#icon-star"></use>
+                                                                    </svg>
+                                                                </button>
+                                                                <button class="btn-icon text-success" type="button">
+                                                                    <svg role="img">
+                                                                        <use xlink:href="#icon-edit"></use>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                        </td>
+                                                        <td>ABCDEFG</td>
+                                                        <td>ABCDEFG</td>
+                                                        <td>Support Analyst</td>
+                                                        <td>DEV</td>
+                                                        <td>icxdummy@gmail.com</td>
+                                                        <td>0123456789</td>
+                                                        <td>Active</td>
+                                                        <td>
+                                                            <div class="hstack align-items-center justify-content-between gap-3">
+                                                                <input type="checkbox">
+                                                                <button class="btn-icon text-success" type="button">
+                                                                    <svg role="img">
+                                                                        <use xlink:href="#icon-edit"></use>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="hstack align-items-center gap-3">
+                                                                <input type="checkbox">
+                                                                <button class="btn-icon text-warm" type="button">
+                                                                    <svg role="img">
+                                                                        <use xlink:href="#icon-star"></use>
+                                                                    </svg>
+                                                                </button>
+                                                                <button class="btn-icon text-success" type="button">
+                                                                    <svg role="img">
+                                                                        <use xlink:href="#icon-edit"></use>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                        </td>
+                                                        <td>ABCDEFG</td>
+                                                        <td>ABCDEFG</td>
+                                                        <td>Support Analyst</td>
+                                                        <td>DEV</td>
+                                                        <td>icxdummy@gmail.com</td>
+                                                        <td>0123456789</td>
+                                                        <td>Active</td>
+                                                        <td>
+                                                            <div class="hstack align-items-center justify-content-between gap-3">
+                                                                <input type="checkbox">
+                                                                <button class="btn-icon text-success" type="button">
+                                                                    <svg role="img">
+                                                                        <use xlink:href="#icon-edit"></use>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="hstack align-items-center gap-3">
+                                                                <input type="checkbox">
+                                                                <button class="btn-icon text-warm" type="button">
+                                                                    <svg role="img">
+                                                                        <use xlink:href="#icon-star"></use>
+                                                                    </svg>
+                                                                </button>
+                                                                <button class="btn-icon text-success" type="button">
+                                                                    <svg role="img">
+                                                                        <use xlink:href="#icon-edit"></use>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                        </td>
+                                                        <td>ABCDEFG</td>
+                                                        <td>ABCDEFG</td>
+                                                        <td>Support Analyst</td>
+                                                        <td>DEV</td>
+                                                        <td>icxdummy@gmail.com</td>
+                                                        <td>0123456789</td>
+                                                        <td>Active</td>
+                                                        <td>
+                                                            <div class="hstack align-items-center justify-content-between gap-3">
+                                                                <input type="checkbox">
+                                                                <button class="btn-icon text-success" type="button">
+                                                                    <svg role="img">
+                                                                        <use xlink:href="#icon-edit"></use>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="hstack align-items-center gap-3">
+                                                                <input type="checkbox">
+                                                                <button class="btn-icon text-warm" type="button">
+                                                                    <svg role="img">
+                                                                        <use xlink:href="#icon-star"></use>
+                                                                    </svg>
+                                                                </button>
+                                                                <button class="btn-icon text-success" type="button">
+                                                                    <svg role="img">
+                                                                        <use xlink:href="#icon-edit"></use>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                        </td>
+                                                        <td>ABCDEFG</td>
+                                                        <td>ABCDEFG</td>
+                                                        <td>Support Analyst</td>
+                                                        <td>DEV</td>
+                                                        <td>icxdummy@gmail.com</td>
+                                                        <td>0123456789</td>
+                                                        <td>Active</td>
+                                                        <td>
+                                                            <div class="hstack align-items-center justify-content-between gap-3">
+                                                                <input type="checkbox">
+                                                                <button class="btn-icon text-success" type="button">
+                                                                    <svg role="img">
+                                                                        <use xlink:href="#icon-edit"></use>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="hstack align-items-center gap-3">
+                                                                <input type="checkbox">
+                                                                <button class="btn-icon text-warm" type="button">
+                                                                    <svg role="img">
+                                                                        <use xlink:href="#icon-star"></use>
+                                                                    </svg>
+                                                                </button>
+                                                                <button class="btn-icon text-success" type="button">
+                                                                    <svg role="img">
+                                                                        <use xlink:href="#icon-edit"></use>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                        </td>
+                                                        <td>ABCDEFG</td>
+                                                        <td>ABCDEFG</td>
+                                                        <td>Support Analyst</td>
+                                                        <td>DEV</td>
+                                                        <td>icxdummy@gmail.com</td>
+                                                        <td>0123456789</td>
+                                                        <td>Active</td>
+                                                        <td>
+                                                            <div class="hstack align-items-center justify-content-between gap-3">
+                                                                <input type="checkbox">
+                                                                <button class="btn-icon text-success" type="button">
+                                                                    <svg role="img">
+                                                                        <use xlink:href="#icon-edit"></use>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="hstack align-items-center gap-3">
+                                                                <input type="checkbox">
+                                                                <button class="btn-icon text-warm" type="button">
+                                                                    <svg role="img">
+                                                                        <use xlink:href="#icon-star"></use>
+                                                                    </svg>
+                                                                </button>
+                                                                <button class="btn-icon text-success" type="button">
+                                                                    <svg role="img">
+                                                                        <use xlink:href="#icon-edit"></use>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                        </td>
+                                                        <td>ABCDEFG</td>
+                                                        <td>ABCDEFG</td>
+                                                        <td>Support Analyst</td>
+                                                        <td>DEV</td>
+                                                        <td>icxdummy@gmail.com</td>
+                                                        <td>0123456789</td>
+                                                        <td>Active</td>
+                                                        <td>
+                                                            <div class="hstack align-items-center justify-content-between gap-3">
+                                                                <input type="checkbox">
+                                                                <button class="btn-icon text-success" type="button">
+                                                                    <svg role="img">
+                                                                        <use xlink:href="#icon-edit"></use>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
